@@ -31,7 +31,7 @@
 @white: #FFFFFF;
 @gray1: #111;
 @gray2: #222;
-@gray3: #333;
+@gray3: #3f3f3f;
 @gray4: #444;
 @gray5: #555;
 @gray6: #666;
@@ -42,13 +42,22 @@
 @gray11: #BBB;
 @gray12: #CCC;
 @gray13: #DDD;
-@gray14: #EEE;
+@gray14: #E5E5E5;
 @gray15: #F9F9F9;
-@gray-base: #333;
+@gray-base: @gray2;
 @border-color: @gray12;
-@disabled-color: @gray13;
-@menu-header-color: @gray10;
-@text-color: @gray3;
+@menu-header-color: @secondary-text-color;
+@text-color: @gray2;
+@secondary-text-color: @gray3;
+@disabled-color: @gray8;
+@placeholder-color: @disabled-color;
+
+@text-color-inverse: @gray15;
+@secondary-text-color-inverse: @gray14;
+@disabled-color-inverse: @gray8;
+@placeholder-color-inverse: @disabled-color-inverse;
+
+
 
 @border-transparent: 1px solid transparent;
 @border-reg: 1px solid @border-color;
@@ -81,17 +90,32 @@
 
 @dangerColorHover   : lighten(@brand-danger, 3);
 @dangerColorDown    : darken(@brand-danger, 5);
-@dangerColorActive  : @dangerColorDown;
+@dangerColorActive  : darken(@brand-danger, 5);
 @dangerColorFocus   : @dangerColorHover;
 
 @state-success-text	: @brand-success;
 @state-warning-text	: @brand-warning;
 @state-danger-text	: @brand-danger;
 
-@inverseColorHover   : lighten(@gray5, 3);
-@inverseColorDown    : darken(@gray5, 5);
-@inverseColorActive  : @inverseColorDown;
+@inverseColorHover   : lighten(@primary-gray-shade2, 4);
+@inverseColorActive  : darken(@primary-gray-shade2, 6);
 @inverseColorFocus   : @inverseColorHover;
+
+@inverseGray1ColorHover   : lighten(@primary-gray-shade1, 4);
+@inverseGray1ColorActive  : darken(@primary-gray-shade1, 6);
+@inverseGray1ColorFocus   : @inverseColorHover;
+
+@whiteColorHover   : darken(@white, 7);
+@whiteColorActive  : darken(@whiteColorHover, 5);;
+@whiteColorFocus   : @whiteColorHover;
+
+@gray1ColorHover   : darken(@primary-gray-tint1, 7);
+@gray1ColorActive  : darken(@whiteColorHover, 5);;
+@gray1ColorFocus   : @whiteColorHover;
+
+@gray3ColorHover   : darken(@primary-gray-tint3, 3);
+@gray3ColorActive  : darken(@primary-gray-tint3, 6);
+@gray3ColorFocus   : @gray3ColorHover;
 
 @table-border-color	: @border-color;
 
@@ -108,9 +132,9 @@
 @border-radius-base: 2px;
 @border-radius-large: 2px;
 @table-cell-padding: 1em;
-@btn-default-color: #555;
+@btn-default-color: @gray5;
 @input-border-focus: @brand-primary;
-@input-color-placeholder: @gray10;
+@input-color-placeholder: @placeholder-color;
 @legend-border-color: @gray12;
 @navbar-default-color: rgb(217, 83, 79);
 @padding-reg: .5em 1em;
@@ -128,16 +152,19 @@
 @navbar-border-radius: 0px;
 @pagination-border: transparent;
 @pagination-disabled-border: transparent;
-@pagination-color: @gray5;
-@pagination-active-color: @gray5;
+@pagination-color: @secondary-text-color;
+@pagination-active-color: @brand-primary;
+
+/* hover of white */
 @list-group-hover-bg: @gray14;
 
 
 @padding-bigContainer: 1em 1.5em .7em 1.5em;
 @padding-regContainer: 1em 1.5em 1em 1.5em;
 
+@navbar-inverse-color: @text-color-inverse;
 @navbar-inverse-bg: @gray3;
-@navbar-inverse-link-color: @gray12;
+@navbar-inverse-link-color: @text-color-inverse;
 
 @dropdown-border: @gray12;
 @dropdown-divider-bg: @gray12;

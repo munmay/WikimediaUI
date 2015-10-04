@@ -12,8 +12,8 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	font-weight: bold;
 }
 .breadcrumb > li > a{
-	color: @gray5;
-	border-color: @gray5;
+	color: @text-color;
+	border-color: @text-color;
 }
 
 /* -----------
@@ -265,7 +265,7 @@ ul.nav-pills > li.open > a.dropdown-toggle{
 	background-color: white;
     border: @border-reg;
 }
-ul.nav-pills > li.dropdown > ul.dropdown-menu{
+.nav-pills > li.dropdown > ul.dropdown-menu{
 	top: 94%;
 }
 .btn-default:focus, 
@@ -276,13 +276,13 @@ ul.nav-pills > li.dropdown > a.dropdown-toggle:focus{
 	border: 1px solid @gray10;
 	box-shadow: @focusInsetBorder;
 }
-ul.nav-pills > li.open > a.dropdown-toggle:focus{
+.nav-pills > li.open > a:focus{
 	background-color: @white;
 	box-shadow: none;
 	border: @border-reg;
 }
 .nav-pills > li > a {
-    color: @gray5;
+    color: @text-color;
 }
 .nav-tabs > li > a, 
 ul.nav-pills > li.dropdown > a.dropdown-toggle {
@@ -291,6 +291,13 @@ ul.nav-pills > li.dropdown > a.dropdown-toggle {
 }
 .nav-pills > li > a > .badge {
     margin-left: .3em;
+}
+
+.nav-pills>li>a:hover{
+	background-color: @whiteColorHover;
+}
+.nav-pills>li>a:active{
+	background-color: @whiteColorActive;
 }
 
 /* -----------
@@ -306,6 +313,10 @@ ul.nav-pills > li.dropdown > a.dropdown-toggle {
 	line-height: 1.6em;
 	height: 0;
 	font-size: 1em;
+}
+.navbar-default{
+	background-color: @primary-gray-tint3;
+	box-shadow: @boxshadow-reg;
 }
 .navbar-default .navbar-brand {
 	font-weight:bold;
@@ -326,28 +337,26 @@ ul.nav-pills > li.dropdown > a.dropdown-toggle {
 button.btn.btn-default.dropdown-toggle:hover, 
 button.btn.btn-default.dropdown-toggle:hover:focus,
 .dropdown-menu > li > a:hover{
-	background-color: @gray14;
+	background-color: @gray3ColorHover;
 	box-shadow: none;
 }
 .navbar-default .navbar-nav > li > a:active, 
 button.btn.btn-default.dropdown-toggle:active,
 .dropdown-menu > li > a:active,
 a.list-group-item:active{
-	background-color: @gray12;
+	background-color: @gray3ColorActive;
 }
 .nav .open > a, 
 .nav .open > a:hover, 
 .nav .open > a:focus {
 	border-color: @border-color;
 }
-.navbar-default{
-	box-shadow: @boxshadow-reg;
-}
+
 
 /* ---- INVERSE NAVBAR ---- */
 
 .navbar-inverse {
-	border: transparent;
+	border-color: @primary-gray-shade2;
 	box-shadow: @boxshadow-dark;
 }
 .navbar-inverse .navbar-nav > li > a {
@@ -359,8 +368,12 @@ a.list-group-item:active{
 }
 .navbar-inverse > div > div > ul > .open > ul {
     border-color: @gray5;
-    background-color: @gray3;
+    background-color: @primary-gray-shade1;
     box-shadow: @boxshadow-dark;
+}
+.navbar-inverse .navbar-nav>.open>a, 
+.navbar-inverse .navbar-nav>.open>a:focus {
+	background-color: @primary-gray-shade1;
 }
 .navbar-inverse > div > div > ul > .open > ul > .divider {
     background-color: @gray5;
@@ -369,14 +382,31 @@ a.list-group-item:active{
 	background-color: @inverseColorHover;
 }
 .navbar-inverse div > div > ul > .open > ul > li > a:active{ 
-	background-color: @inverseColorDown;
+	background-color: @inverseColorActive;
 }
 .navbar-inverse div > div > ul > .open > ul > li > a:focus{
 	background-color: @inverseColorFocus;
-	box-shadow: @focusInsetBorder;
 }
 .navbar-inverse div > div > ul > .open > ul > li > a{
-	color: @white;
+	color: @navbar-inverse-color;
+	background-color: @primary-gray-shade1;
+}
+ 
+button.btn.btn-default.dropdown-toggle:hover, 
+button.btn.btn-default.dropdown-toggle:hover:focus {
+	background-color: @inverseGray1ColorHover;
+	box-shadow: none;
+}
+.navbar-inverse .navbar-nav > li > a:hover {
+	background-color: @inverseColorHover;
+}
+.navbar-inverse .navbar-nav > li > a:active, 
+button.btn.btn-default.dropdown-toggle:active,
+.dropdown-menu > li > a:active,
+a.list-group-item:active,
+.navbar-inverse .navbar-nav > li > a:active:focus {
+	background-color: @inverseColorActive;
+	box-shadow: none;
 }
 
 
@@ -386,13 +416,13 @@ a.list-group-item:active{
 .form-control {
 	height: auto;
 	padding: @padding-reg;
-	color: @gray5;
+	color: @text-color;
 	box-shadow: none;
 	transition: all .01s ease-in-out;
 }
 .form-control:focus {
 	box-shadow: @focusFormInsetBorder;
-	color: @gray5;
+	color: @text-color;
 }
 .form-control:hover {
 	border: @hoverBorder;
@@ -421,7 +451,7 @@ select.form-control {
 	box-shadow: inset 0px 0px 0px 2px @brand-primary;
 }
 .has-warning .form-control:hover {
-	border-color: #ff5d00;
+	border-color: @brand-warning;
 }
 .has-warning .form-control, 
 .has-error .form-control, 
