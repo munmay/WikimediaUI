@@ -1,33 +1,31 @@
 /*GRAYS*/
 @primary-gray-tint3: #F9F9F9;
-@primary-gray-tint2: lighten(@primary-gray-tint-accent, 59%);
-@primary-gray-tint1: lighten(@primary-gray-tint-accent, 52%);
-@primary-gray-tint-accent: #555;
-@primary-gray-shade-accent: lighten(@primary-gray-tint-accent, 40%);
-@primary-gray-shade1: darken(@primary-gray-tint-accent, 13.5%);
-@primary-gray-shade2: darken(@primary-gray-tint-accent, 20%);
+@primary-gray-tint2: lighten(@primary-gray-base, 59%);
+@primary-gray-tint1: lighten(@primary-gray-base, 52%);
+@primary-gray-base: #555;
+@primary-gray-shade1: darken(@primary-gray-base, 13.5%);
+@primary-gray-shade2: darken(@primary-gray-base, 20%);
 @primary-gray-shade3: #111;
 
 /*BLUES*/
-@primary-blue-tint3: lighten(@primary-blue-tint-accent, 65%);
-@primary-blue-tint2: lighten(@primary-blue-tint-accent, 59.5%);
-@primary-blue-tint1: lighten(@primary-blue-tint-accent, 54%);
-@primary-blue-tint-accent: #165C91;
-@primary-blue-shade-accent: lighten(@primary-blue-tint-accent, 43%);
-@primary-blue-shade1: darken(@primary-blue-tint-accent, 12%);
-@primary-blue-shade2: darken(@primary-blue-tint-accent, 18%);
-@primary-blue-shade3: darken(@primary-blue-tint-accent, 25%);
+@primary-blue-tint3: lighten(@primary-blue-base, 66%);
+@primary-blue-tint2: lighten(@primary-blue-base, 62%);
+@primary-blue-tint1: lighten(@primary-blue-base, 56%);
+@primary-blue-base: #165C91;
+@primary-blue-shade1: darken(@primary-blue-base, 15%);
+@primary-blue-shade2: darken(@primary-blue-base, 20%);
+@primary-blue-shade3: darken(@primary-blue-base, 25%);
+@primary-blue-accent: #0645ad;
 
 /*REDS*/
-@primary-red-tint3: lighten(@primary-red-tint-accent, 59%);
-@primary-red-tint2: lighten(@primary-red-tint-accent, 56%);
-@primary-red-tint1: lighten(@primary-red-tint-accent, 51%);
-@primary-red-tint-accent: #AB1F1D;
-@primary-red-shade-accent: lighten(@primary-red-tint-accent, 40%);
-@primary-red-shade1: darken(@primary-red-tint-accent, 17%);
-@primary-red-shade2: darken(@primary-red-tint-accent, 24%);
-@primary-red-shade3: darken(@primary-red-tint-accent, 30%);
-
+@primary-red-tint3: lighten(@primary-red-base, 59%);
+@primary-red-tint2: lighten(@primary-red-base, 56%);
+@primary-red-tint1: lighten(@primary-red-base, 51%);
+@primary-red-base: #AB1F1D;
+@primary-red-shade1: darken(@primary-red-base, 17%);
+@primary-red-shade2: darken(@primary-red-base, 24%);
+@primary-red-shade3: darken(@primary-red-base, 30%);
+@primary-red-accent: #cc0000;
 
 @black: #000;
 @white: #FFFFFF;
@@ -55,10 +53,10 @@
 @border-transparent: 1px solid transparent;
 @border-reg: 1px solid @border-color;
 @border-dark: 1px solid @black;
-@brand-primary: @primary-blue-tint-accent;
+@brand-primary: @primary-blue-base;
 @brand-success: #00af89;
 @brand-warning: #ff5d00;
-@brand-danger: @primary-red-tint-accent;
+@brand-danger: @primary-red-base;
 
 @btn-primary-border: @brand-primary;
 @btn-success-border: @brand-success;
@@ -76,7 +74,6 @@
 @primaryColorActive  : @primaryColorDown;
 @primaryColorFocus   : @primaryColorHover;
 
-
 @warningColorHover   : lighten(@brand-warning, 3);
 @warningColorDown    : darken(@brand-warning, 5);
 @warningColorActive  : @warningColorDown;
@@ -87,10 +84,14 @@
 @dangerColorActive  : @dangerColorDown;
 @dangerColorFocus   : @dangerColorHover;
 
-
 @state-success-text	: @brand-success;
 @state-warning-text	: @brand-warning;
 @state-danger-text	: @brand-danger;
+
+@inverseColorHover   : lighten(@gray5, 3);
+@inverseColorDown    : darken(@gray5, 5);
+@inverseColorActive  : @inverseColorDown;
+@inverseColorFocus   : @inverseColorHover;
 
 @table-border-color	: @border-color;
 

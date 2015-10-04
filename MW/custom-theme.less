@@ -1,3 +1,6 @@
+a:focus{
+	outline: none;
+}
 h1 {
 	font-family: @font-family-serif;
 }
@@ -243,27 +246,6 @@ option {
     min-height: 1.2em;
 }
 
-/* ---- NAVBAR ---- */
-.navbar{
-	min-height: 0;
-}
-.navbar ul.dropdown-menu{
-    top: 100%;
-}
-.navbar-default .navbar-nav > li > a:hover, 
-button.btn.btn-default.dropdown-toggle:hover, 
-button.btn.btn-default.dropdown-toggle:hover:focus,
-.dropdown-menu > li > a:hover{
-	background-color: @gray14;
-	box-shadow: none;
-}
-.navbar-default .navbar-nav > li > a:active, 
-button.btn.btn-default.dropdown-toggle:active,
-.dropdown-menu > li > a:active,
-a.list-group-item:active{
-	background-color: @gray12;
-}
-
 
 /* ---- BUTTON GROUP ---- */
 .btn-group > .btn:first-child:not(:last-child):not(.dropdown-toggle){
@@ -314,7 +296,12 @@ ul.nav-pills > li.dropdown > a.dropdown-toggle {
 /* -----------
     NAVBAR
 -------------- */
-
+.navbar{
+	min-height: 0;
+}
+.navbar ul.dropdown-menu{
+    top: 100%;
+}
 .navbar-brand {
 	line-height: 1.6em;
 	height: 0;
@@ -335,22 +322,62 @@ ul.nav-pills > li.dropdown > a.dropdown-toggle {
 .navbar-default .navbar-nav > .open > a:focus {
 	background-color: @white;
 }
+.navbar-default .navbar-nav > li > a:hover, 
+button.btn.btn-default.dropdown-toggle:hover, 
+button.btn.btn-default.dropdown-toggle:hover:focus,
+.dropdown-menu > li > a:hover{
+	background-color: @gray14;
+	box-shadow: none;
+}
+.navbar-default .navbar-nav > li > a:active, 
+button.btn.btn-default.dropdown-toggle:active,
+.dropdown-menu > li > a:active,
+a.list-group-item:active{
+	background-color: @gray12;
+}
 .nav .open > a, 
 .nav .open > a:hover, 
 .nav .open > a:focus {
 	border-color: @border-color;
 }
+.navbar-default{
+	box-shadow: @boxshadow-reg;
+}
 
 /* ---- INVERSE NAVBAR ---- */
 
-.navbar.navbar-inverse {
-	border: @border-dark;
+.navbar-inverse {
+	border: transparent;
 	box-shadow: @boxshadow-dark;
 }
 .navbar-inverse .navbar-nav > li > a {
 	border-left: 1px solid @gray5;
 }
-
+.navbar-inverse div .navbar-collapse .nav .open >a:hover,
+.navbar-inverse div .navbar-collapse .nav .open >a:focus{
+	border-color: @gray5;
+}
+.navbar-inverse > div > div > ul > .open > ul {
+    border-color: @gray5;
+    background-color: @gray3;
+    box-shadow: @boxshadow-dark;
+}
+.navbar-inverse > div > div > ul > .open > ul > .divider {
+    background-color: @gray5;
+}
+.navbar-inverse div > div > ul > .open > ul > li > a:hover{ 
+	background-color: @inverseColorHover;
+}
+.navbar-inverse div > div > ul > .open > ul > li > a:active{ 
+	background-color: @inverseColorDown;
+}
+.navbar-inverse div > div > ul > .open > ul > li > a:focus{
+	background-color: @inverseColorFocus;
+	box-shadow: @focusInsetBorder;
+}
+.navbar-inverse div > div > ul > .open > ul > li > a{
+	color: @white;
+}
 
 
 /* -----------
@@ -856,6 +883,9 @@ tfoot {
 .img-thumbnail {
   padding: 0;
   border-radius: 0;
+}
+.img-responsive{
+	width: 100%;
 }
 .well {
     min-height: 20px;

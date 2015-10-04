@@ -1113,6 +1113,7 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+  width: 100%;
 }
 .img-rounded {
   border-radius: 2px;
@@ -6765,6 +6766,9 @@ button.close {
 /*GRAYS*/
 /*BLUES*/
 /*REDS*/
+a:focus {
+  outline: none;
+}
 h1 {
   font-family: Georgia, "Times New Roman", Times, serif;
 }
@@ -6999,26 +7003,6 @@ option {
   padding: 0.5em 1em;
   min-height: 1.2em;
 }
-/* ---- NAVBAR ---- */
-.navbar {
-  min-height: 0;
-}
-.navbar ul.dropdown-menu {
-  top: 100%;
-}
-.navbar-default .navbar-nav > li > a:hover,
-button.btn.btn-default.dropdown-toggle:hover,
-button.btn.btn-default.dropdown-toggle:hover:focus,
-.dropdown-menu > li > a:hover {
-  background-color: #eeeeee;
-  box-shadow: none;
-}
-.navbar-default .navbar-nav > li > a:active,
-button.btn.btn-default.dropdown-toggle:active,
-.dropdown-menu > li > a:active,
-a.list-group-item:active {
-  background-color: #cccccc;
-}
 /* ---- BUTTON GROUP ---- */
 .btn-group > .btn:first-child:not(:last-child):not(.dropdown-toggle) {
   border-right: 1px solid transparent;
@@ -7065,6 +7049,12 @@ ul.nav-pills > li.dropdown > a.dropdown-toggle {
 /* -----------
     NAVBAR
 -------------- */
+.navbar {
+  min-height: 0;
+}
+.navbar ul.dropdown-menu {
+  top: 100%;
+}
 .navbar-brand {
   line-height: 1.6em;
   height: 0;
@@ -7085,18 +7075,59 @@ ul.nav-pills > li.dropdown > a.dropdown-toggle {
 .navbar-default .navbar-nav > .open > a:focus {
   background-color: #ffffff;
 }
+.navbar-default .navbar-nav > li > a:hover,
+button.btn.btn-default.dropdown-toggle:hover,
+button.btn.btn-default.dropdown-toggle:hover:focus,
+.dropdown-menu > li > a:hover {
+  background-color: #eeeeee;
+  box-shadow: none;
+}
+.navbar-default .navbar-nav > li > a:active,
+button.btn.btn-default.dropdown-toggle:active,
+.dropdown-menu > li > a:active,
+a.list-group-item:active {
+  background-color: #cccccc;
+}
 .nav .open > a,
 .nav .open > a:hover,
 .nav .open > a:focus {
   border-color: #cccccc;
 }
+.navbar-default {
+  box-shadow: 0 2px 0px rgba(204, 204, 204, 0.5);
+}
 /* ---- INVERSE NAVBAR ---- */
-.navbar.navbar-inverse {
-  border: 1px solid #000000;
+.navbar-inverse {
+  border: transparent;
   box-shadow: 0 2px 0px rgba(0, 0, 0, 0.5);
 }
 .navbar-inverse .navbar-nav > li > a {
   border-left: 1px solid #555555;
+}
+.navbar-inverse div .navbar-collapse .nav .open > a:hover,
+.navbar-inverse div .navbar-collapse .nav .open > a:focus {
+  border-color: #555555;
+}
+.navbar-inverse > div > div > ul > .open > ul {
+  border-color: #555555;
+  background-color: #333333;
+  box-shadow: 0 2px 0px rgba(0, 0, 0, 0.5);
+}
+.navbar-inverse > div > div > ul > .open > ul > .divider {
+  background-color: #555555;
+}
+.navbar-inverse div > div > ul > .open > ul > li > a:hover {
+  background-color: #5d5d5d;
+}
+.navbar-inverse div > div > ul > .open > ul > li > a:active {
+  background-color: #484848;
+}
+.navbar-inverse div > div > ul > .open > ul > li > a:focus {
+  background-color: #5d5d5d;
+  box-shadow: inset 0px 0px 0px 1px #ffffff;
+}
+.navbar-inverse div > div > ul > .open > ul > li > a {
+  color: #ffffff;
 }
 /* -----------
    FORM-CONTROL
@@ -7577,6 +7608,13 @@ tfoot {
 .img-thumbnail {
   padding: 0;
   border-radius: 0;
+}
+.img-responsive,
+.thumbnail > img,
+.thumbnail a > img,
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  width: 100%;
 }
 .well {
   min-height: 20px;
