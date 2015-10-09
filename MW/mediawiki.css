@@ -6935,9 +6935,11 @@ button.btn.btn-default.dropdown-toggle,
   outline: none;
 }
 .open > .dropdown-toggle.btn-default:hover,
-.open > .dropdown-toggle.btn-default:hover:focus {
+.open > .dropdown-toggle.btn-default:hover:focus,
+button.btn.btn-default.dropdown-toggle:hover,
+button.btn.btn-default.dropdown-toggle:hover:focus {
   box-shadow: none;
-  background-color: #cccccc;
+  background-color: #ededed !important;
   border: 1px solid #cccccc;
 }
 .open > .dropdown-toggle.btn-default:focus {
@@ -7027,8 +7029,8 @@ ul.nav-pills > li.open > a.dropdown-toggle {
 button.btn.btn-default.dropdown-toggle:focus,
 ul.nav-pills > li.dropdown > a.dropdown-toggle:focus {
   outline: none;
-  background-color: #dddddd;
-  border: 1px solid #aaaaaa;
+  background-color: #ededed;
+  border: 1px solid #cccccc;
   box-shadow: inset 0px 0px 0px 1px #ffffff;
 }
 .nav-pills > li.open > a:focus {
@@ -7066,13 +7068,18 @@ ul.nav-pills > li.dropdown > a.dropdown-toggle {
   line-height: 1.6em;
   height: 0;
   font-size: 1em;
+  font-weight: bold;
+}
+.navbar-text {
+  margin-top: .5em;
+  margin-bottom: .5em;
+}
+.navbar-right {
+  margin-right: 0;
 }
 .navbar-default {
   background-color: #f9f9f9;
   box-shadow: 0 2px 0px rgba(204, 204, 204, 0.5);
-}
-.navbar-default .navbar-brand {
-  font-weight: bold;
 }
 .navbar-default .navbar-nav > li > a {
   border-left: 1px solid #cccccc;
@@ -7408,7 +7415,7 @@ ul.nav-tabs > li > a {
 .bs-callout {
   padding: 20px;
   margin: 20px 0;
-  border: 1px solid #e5e5e5;
+  border: 1px solid #cccccc;
   border-radius: 2px;
 }
 .bs-callout code {
@@ -7548,7 +7555,7 @@ ul.nav-tabs > li > a {
   position: absolute;
   bottom: 0;
   right: 0;
-  border-top: 1px solid #dddddd;
+  border-top: 1px solid #cccccc;
 }
 .card-body .btn-group {
   margin-top: .5em;
@@ -7586,7 +7593,7 @@ ul.nav-tabs > li > a {
      TABLE
 -------------- */
 tr {
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solid #cccccc;
 }
 .table > tbody > tr > th,
 .table > tbody > tr > td {
@@ -7652,3 +7659,16 @@ tfoot {
   -webkit-box-shadow: none;
   box-shadow: none;
 }
+.group {
+  background: yellow;
+  width: 200px;
+  height: 500px;
+}
+.group .subgroup {
+  background: orange;
+  width: 150px;
+  height: 200px;
+}
+/*.fixed {
+    position: fixed;
+}*/

@@ -1,0 +1,1116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Mediawiki UI</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link rel="stylesheet" href="mw/mediawiki.min.css">
+  <link rel="stylesheet" href="bootstrap-3.3.5/docs/assets/css/docs.min.css">
+</head>
+
+<body style="padding: 3em 3em 10em 3em;">
+
+<!-- 
+<code>
+  Inline code snippet
+</code> 
+
+<div class="zero-clipboard">
+  <span class="btn-clipboard btn-clipboard-hover">
+    Copy code
+  </span>
+</div>
+
+<div class="highlight">
+  <pre>
+    <code class="language-html" data-lang="html">
+      Code snippet
+    </code>
+  </pre>
+</div>
+-->
+
+<div class="container bs-docs-container">
+  <div class="row">
+    <div class="col-md-9" role="main">
+      <div class="bs-docs-section">
+
+        <!-- ----------------- 
+               BUTTONS 
+               ----------------- -->
+               <h2 id="buttons" class="page-header">
+                <a class="anchorjs-link " href="#button" aria-label="Anchor link for: buttons"></a>
+                Buttons
+              </h2>
+
+              <p class="bs-component">
+                <a href="" class="btn btn-default">Default</a>
+                <a href="" class="btn btn-primary">Primary</a>
+                <a href="" class="btn btn-success">Success</a>
+                <a href="" class="btn btn-warning">Warning</a>
+                <a href="" class="btn btn-danger">Danger</a>
+                <a href="" class="btn btn-link">Link</a>
+              </p>
+
+
+              <!-- ----------------- BUTTONS - BUTTON TOOLBAR -->
+
+              <h3 id="button-toolbar" class="page-header">
+                <a class="anchorjs-link " href="#button-toolbar" aria-label="Anchor link for: button toolbar"></a>
+                Button toolbar
+              </h3>
+
+              <!-- basic toolbar -->
+              <p class="bs-component">
+                <div class="btn-toolbar">
+                  <div class="btn-group">
+                    <a href="" class="btn btn-default">1</a>
+                    <a href="" class="btn btn-default">2</a>
+                    <a href="" class="btn btn-default">3</a>
+                    <a href="" class="btn btn-default">4</a>
+                  </div>
+                </div>
+              </p>
+
+              <!-- with a dropdown -->
+              <p class="bs-component">   
+                <div class="btn-group">
+                  <a href="" class="btn btn-default">Button</a> <!-- button -->
+
+                  <div class="btn-group"> <!-- dropdown -->
+                    <a href="" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                      Dropdown
+                      <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a href="">Dropdown link</a></li>
+                      <li><a href="">Dropdown link</a></li>
+                      <li><a href="">Dropdown link</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </p>
+
+              <!-- ----------------- BUTTONS - Sizes -->
+
+              <h3 id="button-sizes" class="page-header">
+                <a class="anchorjs-link " href="#button-sizes" aria-label="Anchor link for: button sizes"></a>
+                Button sizes
+              </h3>
+
+              <!-- button sizes -->
+              <p class="bs-component">
+                <a href="" class="btn btn-primary">Default button</a>
+                <a href="" class="btn btn-primary btn-sm">Small button</a>
+                <a href="" class="btn btn-primary btn-xs">Mini button</a>
+              </p>
+
+              <!-- justified buttons -->
+              <div class="bs-component" style="margin-bottom: 15px;">
+                <div class="btn-group btn-group-justified">
+                  <a href="" class="btn btn-default">Left</a>
+                  <a href="" class="btn btn-default">Middle</a>
+                  <a href="" class="btn btn-default">Right</a>
+                </div>
+              </div>
+
+              <!-- full-width buttons -->
+              <p class="bs-component">
+                <a href="" class="btn btn-default btn-lg btn-block">Block level button</a>
+              </p>
+
+
+        <!-- ----------------- 
+               DROPDOWN 
+               ----------------- -->
+
+               <h2 id="dropdowns" class="page-header">
+                <a class="anchorjs-link " href="#dropdowns" aria-label="Anchor link for: dropdowns"></a>
+                Dropdown
+              </h2>
+
+              <!-- basic button dropdown  --> 
+              <div class="btn-group">
+                <a href="" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                  Basic dropdown
+                  <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="">Dropdown link</a></li>
+                  <li><a href="">Dropdown link</a></li>
+                  <li><a href="">Dropdown link</a></li>
+                </ul>
+              </div>
+
+              <!-- basic link dropdown  --> 
+              <div class="btn-group" role="group">
+                <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                  Dropdown link
+                  <span class="caret">
+                  </span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="">Action</a></li>
+                  <li><a href="">Another action</a></li>
+                  <li><a href="">Something else here</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="">Separated link</a></li>
+                </ul>
+              </div>
+
+
+              <!-- ----------------- DROPDOWNS + buttons -->
+
+              <h3 id="button-dropdowns" class="page-header">
+                <a class="anchorjs-link" href="#button-dropdowns" aria-label="Anchor link for: button dropdowns"></a>
+                Button + Dropdown
+              </h3>
+
+              <!-- default dropdown + buttons -->
+              <div class="btn-toolbar bs-component" style="margin: 0;">
+                <div class="btn-group">
+                  <a href="" class="btn btn-default">Default</a>
+                  <a href="" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="">Action</a></li>
+                    <li><a href="">Another action</a></li>
+                    <li><a href="">Something else here</a></li>
+                    <li class="divider"></li>
+                    <li><a href="">Separated link</a></li>
+                  </ul>
+                </div>
+
+                <!-- primary dropdown + buttons -->
+                <div class="btn-group">
+                  <a href="" class="btn btn-primary">Primary</a>
+                  <a href="" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="">Action</a></li>
+                    <li><a href="">Another action</a></li>
+                    <li><a href="">Something else here</a></li>
+                    <li class="divider"></li>
+                    <li><a href="">Separated link</a></li>
+                  </ul>
+                </div>
+
+                <!-- success dropdown + buttons -->
+                <div class="btn-group">
+                  <a href="" class="btn btn-success">Success</a>
+                  <a href="" class="btn btn-success dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="">Action</a></li>
+                    <li><a href="">Another action</a></li>
+                    <li><a href="">Something else here</a></li>
+                    <li class="divider"></li>
+                    <li><a href="">Separated link</a></li>
+                  </ul>
+                </div>
+
+                <!-- warning dropdown + buttons -->
+                <div class="btn-group">
+                  <a href="" class="btn btn-warning">Warning</a>
+                  <a href="" class="btn btn-warning dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="">Action</a></li>
+                    <li><a href="">Another action</a></li>
+                    <li><a href="">Something else here</a></li>
+                    <li class="divider"></li>
+                    <li><a href="">Separated link</a></li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- ----------------- DROPDOWNS - sizes -->
+              <h3 id="dropdown-sizes" class="page-header">
+                <a class="anchorjs-link " href="#dropdown-sizes" aria-label="Anchor link for: dropdown sizes"></a>
+                Dropdown sizes
+              </h3>
+
+              <!-- Large dropdown -->
+              <p class="bs-component">
+                <div class="btn-group">
+                  <button class="btn btn-default btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Large button <span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a href="">Option 1</a></li>
+                    <li><a href="">Option 2</a></li>
+                    <li><a href="">Option 3</a></li>
+                  </ul>
+                </div>
+
+                <!-- Small dropdown -->
+                <div class="btn-group">
+                  <button class="btn btn-default btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Small button <span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a href="">Option 1</a></li>
+                    <li><a href="">Option 2</a></li>
+                    <li><a href="">Option 3</a></li>
+                  </ul>
+                </div>
+
+                <!-- Extra small dropdown -->
+                <div class="btn-group">
+                  <button class="btn btn-default btn-xs dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Extra small button <span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a href="">Option 1</a></li>
+                    <li><a href="">Option 2</a></li>
+                    <li><a href="">Option 3</a></li>
+                  </ul>
+                </div>
+              </p>
+
+              <!-- justified button group with dropdown-->
+              <p class="bs-component">
+                <div class="btn-group btn-group-justified">
+                  <a href="" class="btn btn-default ">Left</a> <!-- button link -->
+
+                  <div class="btn-group" role="group"> <!-- dropdown 1 -->
+                    <a href="" class="btn btn-default dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                      Dropdown 
+                      <span class="caret">
+                      </span>
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a href="">Action</a></li>
+                      <li><a href="">Another action</a></li>
+                      <li><a href="">Something else here</a></li>
+                      <li role="separator" class="divider"></li>
+                      <li><a href="">Separated link</a></li>
+                    </ul>
+                  </div>
+
+                  <div class="btn-group" role="group"> <!-- dropdown 2 -->
+                    <a href="" class="btn btn-default dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                      Dropdown 
+                      <span class="caret">
+                      </span>
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a href="">Action</a></li>
+                      <li><a href="">Another action</a></li>
+                      <li><a href="">Something else here</a></li>
+                      <li role="separator" class="divider"></li>
+                      <li><a href="">Separated link</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </p>
+
+              <!-- full-width dropdown -->
+              <p class="bs-component">
+                <div class="btn-group" role="group">
+                  <a href="" class="btn btn-default btn-group-justified dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                    Dropdown 
+                    <span class="caret">
+                    </span>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a href="">Action</a></li>
+                    <li><a href="">Another action</a></li>
+                    <li><a href="">Something else here</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="">Separated link</a></li>
+                  </ul>
+                </div>
+              </p>
+
+        <!-- -----------------
+            INPUT GROUPS
+            ----------------- -->
+
+            <h2 id="input-groups" class="page-header">
+              <a class="anchorjs-link " href="#input-groups" aria-label="Anchor link for: input groups"></a>
+              Input groups
+            </h2>
+
+            <!-- icon + input field -->
+            <p class="bs-component">
+              <div class="input-group">
+                <span class="input-group-addon" id="basic-addon1">@</span>
+                <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+              </div>
+            </p>
+
+            <!-- input field + text -->
+            <p class="bs-component">
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Recipient's username" aria-describedby="basic-addon2">
+                <span class="input-group-addon" id="basic-addon2">@example.com</span>
+              </div>
+            </p>
+
+            <!-- text + input field -->
+            <p class="bs-component">
+              <div class="input-group">
+                <span class="input-group-addon" id="basic-addon3">https://wikipedia.org/wiki/</span>
+                <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+              </div>
+            </p>
+
+            <!-- icon + input field + text -->
+            <p class="bs-component">
+              <div class="input-group">
+                <span class="input-group-addon">$</span>
+                <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                <span class="input-group-addon">.00</span>
+              </div>
+            </p>
+
+            <!-- input field + button -->
+            <p class="bs-component">
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search for...">
+                <span class="input-group-btn">
+                  <button class="btn btn-default" type="button">Go!</button>
+                </span>
+              </div>
+            </p>
+
+            <!-- icon button + icon button + input field -->
+            <p class="bs-component">
+              <div class="input-group">
+                <div class="input-group-btn">
+                  <button type="button" class="btn btn-default" aria-label="Bold"><span class="glyphicon glyphicon-bold"></span></button>
+                  <button type="button" class="btn btn-default" aria-label="Italic"><span class="glyphicon glyphicon-italic"></span></button>
+                </div>
+                <input type="text" class="form-control" aria-label="Text input with multiple buttons">
+              </div>
+            </p>
+
+            <!-- input field + icon button + button -->
+            <p class="bs-component">
+              <div class="input-group">
+                <input type="text" class="form-control" aria-label="Text input with multiple buttons">
+                <div class="input-group-btn">
+                  <button type="button" class="btn btn-default" aria-label="Help"><span class="glyphicon glyphicon-question-sign"></span></button>
+                  <button type="button" class="btn btn-default">Action</button>
+                </div>
+              </div>
+            </p>
+
+            <!-- dropdown + input field -->
+            <p class="bs-component">
+              <div class="input-group">
+                <div class="input-group-btn">
+                  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Action <span class="caret"></span></button>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                  </ul>
+                </div><!-- /btn-group -->
+                <input type="text" class="form-control" aria-label="...">
+              </div><!-- /input-group -->
+            </p>
+
+            <!-- input field + dropdown -->
+            <p class="bs-component">
+              <div class="input-group">
+                <input type="text" class="form-control" aria-label="...">
+                <div class="input-group-btn">
+                  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Action 
+                    <span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-right">
+                    <li><a href="">Action</a></li>
+                    <li><a href="">Another action</a></li>
+                    <li><a href="">Something else here</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="">Separated link</a></li>
+                  </ul>
+                </div>
+              </div>
+            </p>
+
+            <!-- button + dropdown + input field -->
+            <p class="bs-component">
+              <div class="input-group">
+                <div class="input-group-btn">
+                  <button type="button" class="btn btn-default">Action</button>
+                  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="caret"></span>
+                    <span class="sr-only">Toggle Dropdown</span>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                  </ul>
+                </div>
+                <input type="text" class="form-control" aria-label="Text input with segmented button dropdown">
+              </div>
+            </p>
+
+            <!-- input field + button + dropdown -->
+            <p class="bs-component">
+              <div class="input-group">
+                <input type="text" class="form-control" aria-label="Text input with segmented button dropdown">
+                <div class="input-group-btn">
+                  <button type="button" class="btn btn-default">Action</button>
+                  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="caret"></span>
+                    <span class="sr-only">Toggle Dropdown</span>
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-right">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                  </ul>
+                </div>
+              </div>
+            </p>
+
+
+            <!-- ----------------- INPUT - sizes -->
+
+            <h3 id="input-sizes" class="page-header">
+              <a class="anchorjs-link " href="#input-sizes" aria-label="Anchor link for: input sizes  "></a>
+              Input sizes
+            </h3>
+
+            <!-- large input -->
+            <p class="bs-component">
+              <div class="input-group input-group-lg">
+                <span class="input-group-addon" id="sizing-addon1">@</span>
+                <input type="text" class="form-control" placeholder="Username" aria-describedby="sizing-addon1">
+              </div>
+            </p>
+
+            <!-- small input -->
+            <p class="bs-component">
+              <div class="input-group input-group-sm">
+                <span class="input-group-addon" id="sizing-addon3">@</span>
+                <input type="text" class="form-control" placeholder="Username" aria-describedby="sizing-addon3">
+              </div>
+            </p>
+
+
+            <!-- ----------------- NAVIGATION -->
+
+            <h2 id="navigation" class="page-header">
+              <a class="anchorjs-link " href="#navigation" aria-label="Anchor link for: navigation"></a>
+              Navigation
+            </h2>
+
+            <!-- ----------------- NAVIGATION - tabs -->
+
+            <h3 id="tabs" class="page-header">
+              <a class="anchorjs-link " href="#tabs" aria-label="Anchor link for: tabs"></a>
+              Tabs
+            </h3>
+
+            <!-- basic -->
+            <p class="bs-component">
+              <ul class="nav nav-tabs">
+                <li role="presentation" class="active"><a href="">Home</a></li>
+                <li role="presentation"><a href="">Profile</a></li>
+                <li role="presentation"><a href="">Messages</a></li>
+              </ul>
+            </p>
+
+            <!-- basic with dropdown -->
+            <p class="bs-component">
+              <ul class="nav nav-tabs">
+                <li role="presentation" class="active"><a href="">Home</a></li> <!-- button -->
+                <li role="presentation"><a href="">Profile</a></li> <!-- button -->
+                <li role="presentation"><a href="">Messages</a></li> <!-- button -->
+                <li role="presentation" class="dropdown"> <!-- dropdown -->
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="" role="button" aria-haspopup="true" aria-expanded="false">
+                    Dropdown <span class="caret"></span>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a href="">Option 1</a></li>
+                    <li><a href="">Option 2</a></li>
+                    <li><a href="">Option 3</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </p>
+
+            <!-- ----------------- NAVIGATION - pills -->
+
+            <h3 id="pills" class="page-header">
+              <a class="anchorjs-link " href="#pills" aria-label="Anchor link for: pills"></a>
+              Pills
+            </h3>
+            <p class="bs-component">
+              <ul class="nav nav-pills">
+                <li role="presentation" class="active"><a href="">Home</a></li> <!-- button -->
+                <li role="presentation"><a href="">Profile</a></li> <!-- button -->
+                <li role="presentation"><a href="">Messages</a></li> <!-- button -->
+                <li role="presentation" class="disabled"><a href="#">Disabled link</a></li> <!-- disabled button -->
+                <li role="presentation" class="dropdown"> <!-- dropdown -->
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                    Dropdown <span class="caret"></span>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a href="">Action</a></li>
+                    <li><a href="">Another action</a></li>
+                    <li><a href="">Something else here</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="">Separated link</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </p>
+
+            <!-- ----------------- NAVIGATION - sizes -->
+
+            <h3 id="nav-sizes" class="page-header">
+              <a class="anchorjs-link " href="#nav-sizes" aria-label="Anchor link for: navigation sizes"></a>
+              Sizes
+            </h3>
+
+            <!-- justified tabs with dropdown -->
+            <p class="bs-component">
+              <ul class="nav nav-tabs nav-justified">
+                <li role="presentation" class="active"><a href="">Home</a></li>
+                <li role="presentation"><a href="">Profile</a></li>
+                <li role="presentation"><a href="">Messages</a></li>
+                <li role="presentation" class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="" role="button" aria-haspopup="true" aria-expanded="false">
+                    Dropdown <span class="caret"></span>
+                  </a>
+                  <ul class="dropdown-menu">
+
+                    <li><a href="">Option 1</a></li>
+                    <li><a href="">Option 2</a></li>
+                    <li><a href="">Option 3</a></li>
+
+                  </ul>
+                </li>
+              </ul>
+            </p>
+
+            <!-- justified pills with dropdown -->
+            <p class="bs-component">
+              <ul class="nav nav-pills nav-justified">
+                <li role="presentation" class="active"><a href="">Home</a></li>
+                <li role="presentation"><a href="">Profile</a></li>
+                <li role="presentation"><a href="">Messages</a></li>
+                <li role="presentation" class="disabled"><a href="#">Disabled link</a></li>
+                <li role="presentation" class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                    Dropdown <span class="caret"></span>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a href="">Action</a></li>
+                    <li><a href="">Another action</a></li>
+                    <li><a href="">Something else here</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="">Separated link</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </p>
+
+
+        <!-- -----------------
+            NAVIGATION BAR
+            ----------------- -->
+
+            <h2 id="navigation-bar" class="page-header">
+              <a class="anchorjs-link " href="#navigation-bar" aria-label="Anchor link for: navigation bar"></a>
+              Navigation bar
+            </h2>
+
+            <!-- navigation bar - [left] brand + buttons + dropdown + input field [right] link + dropdown -->
+            <p class="bs-component">
+              <nav class="navbar navbar-default">
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="#">MediaWiki</a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                  <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+                    <li><a href="#">Link</a></li>
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">One more separated link</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                  <form class="navbar-form navbar-left" role="search">
+                    <div class="form-group">
+                      <input type="text" class="form-control" placeholder="Search">
+                    </div>
+                  </form>
+                  <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Link</a></li>
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            </p>
+
+            <!-- navigation bar - buttons + text -->
+            <p class="bs-component">
+              <nav class="navbar navbar-default">
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="#">Wikimedia</a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                  <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+                    <li><a href="#">Link</a></li>
+                    <p class="navbar-text">Signed in as Mark Otto</p>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </p>
+
+
+        <!-- navigation bar - [left] buttons [right] text -->
+        <p class="bs-component">
+          <nav class="navbar navbar-default">
+            <div class="navbar-header">
+              <a class="navbar-brand" href="">Brand</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+                <li><a href="">Link</a></li>
+              </ul>
+              <p class="navbar-text navbar-right">
+                Signed in as 
+                <a href="" class="navbar-link">
+                  Mark Otto
+                </a>
+              </p>
+            </div>
+          </nav>
+        </p>
+
+        <!-- NAVIGATION BAR - HOW TO FIX NAVBAR -->
+
+<!--  <h3 id="fix-navbar" class="page-header">
+      <a class="anchorjs-link " href="#fix-navbar" aria-label="Anchor link for: fix navigation bar"></a>
+      Fix navigation bar
+    </h3> -->
+
+
+    <!-- ----------------- 
+         BREADCRUMBS
+         ----------------- -->
+
+         <h2 id="breadcrumb" class="page-header">
+          <a class="anchorjs-link " href="#breadcrumb" aria-label="Anchor link for: breadcrumb"></a>
+          Breadcrumb
+        </h2>
+
+        <p class="bs-component">
+          <ol class="breadcrumb">
+            <li><a href="">Home</a></li>
+            <li><a href="">Library</a></li>
+            <li class="active">Data</li>
+          </ol>
+        </p>
+
+
+    <!-- ----------------- 
+          PAGINATION 
+          ----------------- -->
+
+          <h2 id="pagination" class="page-header">
+            <a class="anchorjs-link " href="#pagination" aria-label="Anchor link for: pagination"></a>
+            Pagination
+          </h2>
+
+          <p class="bs-component">
+            <nav>
+              <ul class="pagination">
+                <li>
+                  <li class="disabled"><a href="" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
+                </li>
+                <li class="active"><a href="">1 <span class="sr-only">(current)</span></a></li>
+                <li><a href="">2</a></li>
+                <li><a href="">3</a></li>
+                <li><a href="">4</a></li>
+                <li><a href="">5</a></li>
+                <li>
+                  <a href="" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>    
+          </p>
+
+
+          <!-- ----------------- PAGINATION - sizes -->
+
+          <h3 id="pagination-sizes" class="page-header">
+            <a class="anchorjs-link " href="#pagination-sizes" aria-label="Anchor link for: pagination sizes"></a>
+            Pagination sizes
+          </h3>
+
+          <!-- large pagination -->
+          <p class="bs-component">
+            <nav>
+              <ul class="pagination pagination-lg">
+                <li>
+                  <li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
+                </li>
+                <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+
+                <li><a href="">2</a></li>
+                <li><a href="">3</a></li>
+                <li><a href="">4</a></li>
+                <li><a href="">5</a></li>
+                <li>
+                  <a href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>    
+          </p>
+
+          <!-- small pagination -->
+          <p class="bs-component">
+            <nav>
+              <ul class="pagination pagination-sm">
+                <li>
+                  <li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a>
+                  </li>
+                </li>
+                <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a>
+                </li>
+                <li><a href="">2</a></li>
+                <li><a href="">3</a></li>
+                <li><a href="">4</a></li>
+                <li><a href="">5</a></li>
+                <li>
+                  <a href="" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>    
+          </p>
+
+
+    <!-- ----------------- 
+            PAGER
+            ----------------- -->
+
+            <h3 id="pager" class="page-header">
+              <a class="anchorjs-link " href="#pager" aria-label="Anchor link for: pager"></a>
+              Pager
+            </h3>
+
+            <!-- basic pagers -->
+            <nav>
+              <ul class="pager">
+                <li><a href="">Previous</a></li>
+                <li><a href="">Next</a></li>
+              </ul>
+            </nav>
+
+            <!-- edge pagers -->
+            <nav>
+              <ul class="pager">
+                <li class="previous disabled"><a href=""><span aria-hidden="true">&larr;</span> Older</a></li> <!-- disabled -->
+                <li class="next"><a href="">Newer <span aria-hidden="true">&rarr;</span></a></li> 
+              </ul>
+            </nav>
+
+
+    <!-- -----------------
+           LABELS
+           ----------------- -->
+
+           <h2 id="labels" class="page-header">
+            <a class="anchorjs-link " href="#labels" aria-label="Anchor link for: labels"></a>
+            Labels
+          </h2>
+
+          <span class="label label-default">Default</span>
+          <span class="label label-primary">Primary</span>
+          <span class="label label-success">Success</span>
+          <span class="label label-info">Info</span>
+          <span class="label label-warning">Warning</span>
+          <span class="label label-danger">Danger</span>
+
+
+    <!-- -----------------
+            BADGES
+            ----------------- -->
+
+            <h2 id="badges" class="page-header">
+              <a class="anchorjs-link " href="#badges" aria-label="Anchor link for: badges"></a>
+              Badges
+            </h2>
+
+            <!-- badges on pills -->
+            <p class="bs-component">
+              <ul class="nav nav-pills" role="tablist">
+                <li role="presentation" class="active"><a href="#">Home <span class="badge">42</span></a></li>
+                <li role="presentation"><a href="#">Profile</a></li>
+                <li role="presentation"><a href="#">Messages <span class="badge">3</span></a></li>
+              </ul>
+            </p>
+
+            <!-- badges on links -->
+            <p class="bs-component">
+              <a href="">Inbox <span class="badge">42</span></a>
+            </p>
+
+
+    <!-- -----------------
+            LIST GROUP
+            ----------------- -->
+
+            <h2 id="list-group" class="page-header">
+              <a class="anchorjs-link " href="#list-group" aria-label="Anchor link for: list group"></a>
+              List group
+            </h2>
+
+            <!-- basic list -->
+            <p class="bs-component">
+              <ul class="list-group">
+                <li class="list-group-item">Cras justo odio</li>
+                <li class="list-group-item">Dapibus ac facilisis in</li>
+                <li class="list-group-item">Morbi leo risus</li>
+                <li class="list-group-item">Porta ac consectetur ac</li>
+                <li class="list-group-item">Vestibulum at eros</li>
+              </ul>
+            </p>
+
+            <!-- list with badge -->
+            <p class="bs-component">
+              <ul class="list-group">
+                <li class="list-group-item">
+                  <span class="badge">14</span>
+                  Cras justo odio
+                </li>
+                <li class="list-group-item">
+                  <span class="badge">1</span>
+                  Morbi leo risus
+                </li>
+                <li class="list-group-item">
+                  <span class="badge">100</span>
+                  Vestibulum at eros
+                </li>
+              </ul>
+            </p>
+
+            <!-- linked list -->
+            <p class="bs-component">
+              <div class="list-group">
+                <a href="#" class="list-group-item active">
+                  Cras justo odio
+                </a>
+                <a href="#" class="list-group-item">Dapibus ac facilisis in</a>
+                <a href="#" class="list-group-item">Morbi leo risus</a>
+                <a href="#" class="list-group-item">Porta ac consectetur ac</a>
+                <a href="#" class="list-group-item">Vestibulum at eros</a>
+              </div>
+            </p>
+
+            <!-- button list -->
+            <p class="bs-component">
+              <div class="list-group">
+                <button type="button" class="list-group-item">Cras justo odio</button>
+                <button type="button" class="list-group-item">Dapibus ac facilisis in</button>
+                <button type="button" class="list-group-item">Morbi leo risus</button>
+                <button type="button" class="list-group-item">Porta ac consectetur ac</button>
+                <button type="button" class="list-group-item">Vestibulum at eros</button>
+              </div>
+            </p>
+
+
+            <!-- ----------------- LIST GROUP - colored -->
+
+            <h2 id="list-colored" class="page-header">
+              <a class="anchorjs-link " href="#list-colored" aria-label="Anchor link for: colored list"></a>
+              Colored list
+            </h2>
+
+            <p class="bs-component">
+              <ul class="list-group">
+                <li class="list-group-item list-group-item-success">Dapibus ac facilisis in</li>
+                <li class="list-group-item list-group-item-info">Cras sit amet nibh libero</li>
+                <li class="list-group-item list-group-item-warning">Porta ac consectetur ac</li>
+                <li class="list-group-item list-group-item-danger">Vestibulum at eros</li>
+              </ul>
+              <div class="list-group">
+                <a href="#" class="list-group-item list-group-item-success">Dapibus ac facilisis in</a>
+                <a href="#" class="list-group-item list-group-item-info">Cras sit amet nibh libero</a>
+                <a href="#" class="list-group-item list-group-item-warning">Porta ac consectetur ac</a>
+                <a href="#" class="list-group-item list-group-item-danger">Vestibulum at eros</a>
+              </div>
+            </p>
+
+            <!-- ----------------- LIST GROUP - custom -->
+
+            <h2 id="list-custom" class="page-header">
+              <a class="anchorjs-link " href="#list-custom" aria-label="Anchor link for: custom list"></a>
+              Custom list
+            </h2>
+
+            <p class="bs-component">
+              <div class="list-group">
+                <a href="#" class="list-group-item active">
+                  <h4 class="list-group-item-heading">List group item heading</h4>
+                  <p class="list-group-item-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam posuere odio massa, accumsan ullamcorper turpis fermentum quis. Nunc consequat, ex ac efficitur semper, risus orci porttitor eros,
+                  </p>
+                </a>
+
+                <a href="#" class="list-group-item">
+                  <h4 class="list-group-item-heading">List group item heading</h4>
+                  <p class="list-group-item-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam posuere odio massa, accumsan ullamcorper turpis fermentum quis. Nunc consequat, ex ac efficitur semper, risus orci porttitor eros,
+                  </p>
+                </a>
+
+                <a href="#" class="list-group-item">
+                  <h4 class="list-group-item-heading">List group item heading</h4>
+                  <p class="list-group-item-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam posuere odio massa, accumsan ullamcorper turpis fermentum quis. Nunc consequat, ex ac efficitur semper, risus orci porttitor eros,
+                  </p>
+                </a>
+              </div>
+            </p>
+
+          </div>
+        </div>
+
+      <!-- -------------------------
+            TABLE OF CONTENTS
+            -------------------------- -->
+
+            <div class="col-md-3" role="complementary">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix">
+                <ul class="nav bs-docs-sidenav">
+                  <li>
+                    <a href="#buttons">Buttons</a>
+                    <ul class="nav">
+                      <li><a href="#button-toolbar">Button toolbar</a></li>
+                      <li><a href="#button-sizes">Button sizes</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#dropdowns">Dropdowns</a>
+                    <ul class="nav">
+                      <li><a href="#button-dropdowns">Button + Dropdown</a></li>
+                      <li><a href="#dropdown-sizes">Dropdown sizes</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#input-groups">Input groups</a>
+                    <ul class="nav">
+                      <li><a href="#input-sizes">Input sizes</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#navigation">Navigation</a>
+                    <ul class="nav">
+                      <li><a href="#tabs">Tabs</a></li>
+                      <li><a href="#pills">Pills</a></li>
+                      <li><a href="#nav-sizes">Sizes</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#navigation-bar">Navigation bar</a>
+                    <ul class="nav">
+                      <li><a href="#basic-navbar">Basic navigation bar</a></li>
+                      <li><a href="#fix-navbar">Fix navigation bar</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#breadcrumb">Breadcrumb</a>
+                  </li>
+                  <li>
+                    <a href="#pagination">Pagination</a>
+                    <ul class="nav">
+                      <li><a href="#pager">Pager</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#labels">Labels</a>
+                    <ul class="nav">
+                      <li><a href="#label-sizes">Label-sizes</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#badges">Badges</a>
+                  </li>
+                  <li>
+                    <a href="#list-group">List group</a>
+                    <ul class="nav">
+                      <li><a href="#list-colored">Colored list</a></li>
+                      <li><a href="#list-custom">Custom list</a></li>
+                    </ul>
+
+                  </li>
+
+                </ul>
+              </nav>
+            </div>
+
+
+<!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="/bootstrap-3.3.5/docs/assets/js/docs.min.js"></script>
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <script src="/bootstrap-3.3.5/docs/assets/js/ie10-viewport-bug-workaround.js"></script>
+
+  <script>
+    $('body').scrollspy({
+      target: '.bs-docs-sidebar',
+      offset: 40
+    });
+  </script>
+</body>
+</html>

@@ -24,7 +24,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	padding: @padding-reg;
 }
 .btn-default:hover {
-	border: 1px solid @gray12;
+	border: @border-reg;
 }
 .btn-default:active, 
 .btn-default:active:focus {
@@ -171,10 +171,12 @@ button.btn.btn-default.dropdown-toggle,
 	outline: none;	
 }
 .open > .dropdown-toggle.btn-default:hover, 
-.open > .dropdown-toggle.btn-default:hover:focus {
+.open > .dropdown-toggle.btn-default:hover:focus, 
+button.btn.btn-default.dropdown-toggle:hover, 
+button.btn.btn-default.dropdown-toggle:hover:focus {
 	box-shadow: none;
-	background-color: @gray12;
-	border: 1px solid @gray12;
+	background-color: @whiteColorHover !important;
+	border: @border-reg;
 }
 .open > .dropdown-toggle.btn-default:focus {
 	box-shadow: none;
@@ -272,8 +274,8 @@ ul.nav-pills > li.open > a.dropdown-toggle{
 button.btn.btn-default.dropdown-toggle:focus,
 ul.nav-pills > li.dropdown > a.dropdown-toggle:focus{
 	outline: none;
-	background-color: @gray13;
-	border: 1px solid @gray10;
+	background-color: @whiteColorFocus;
+	border: @border-reg;
 	box-shadow: @focusInsetBorder;
 }
 .nav-pills > li.open > a:focus{
@@ -313,13 +315,18 @@ ul.nav-pills > li.dropdown > a.dropdown-toggle {
 	line-height: 1.6em;
 	height: 0;
 	font-size: 1em;
+	font-weight:bold;
+}
+.navbar-text{
+	margin-top: .5em;
+	margin-bottom: .5em;
+}
+.navbar-right{
+	margin-right: 0;
 }
 .navbar-default{
 	background-color: @primary-gray-tint3;
 	box-shadow: @boxshadow-reg;
-}
-.navbar-default .navbar-brand {
-	font-weight:bold;
 }
 .navbar-default .navbar-nav > li > a {
 	border-left: @border-reg;
@@ -573,7 +580,7 @@ select.form-control {
 }
 .list-simple-group .media-body {
 	padding: .4em 0 .5em 0;
-	border-bottom: 1px solid @gray12;
+	border-bottom: @border-reg;
 	line-height: 1.25em;
 }
 .list-simple-group .media {
@@ -682,7 +689,7 @@ ul.nav-tabs > li > a{
 .bs-callout {
   padding: 20px;
   margin: 20px 0;
-  border: 1px solid @gray14;
+  border: @border-reg;
   border-radius: @border-radius-base;
 }
 .bs-callout code {
@@ -816,13 +823,13 @@ ul.nav-tabs > li > a{
     line-height: 1.3em;
 	color: @gray5;
 	padding: .6em 1em .5em 1em;
-	border-bottom: 1px solid @gray12;
+	border-bottom: @border-reg;
 }
 .attribution-bottom {
 	position: absolute;
 	bottom: 0;
 	right: 0;
-	border-top: 1px solid @gray13;
+	border-top: @border-reg;
 }
 .card-body .btn-group {
 	margin-top: .5em;
@@ -861,7 +868,7 @@ ul.nav-tabs > li > a{
      TABLE
 -------------- */
 tr {
-	border-bottom: 1px solid @gray14;
+	border-bottom: @border-reg;
 }
 .table>tbody>tr>th, 
 .table>tbody>tr>td {
@@ -925,3 +932,17 @@ tfoot {
     -webkit-box-shadow: none;
     box-shadow: none;
 }
+
+.group {
+    background: yellow;
+    width: 200px;
+    height: 500px;
+}
+.group .subgroup {
+    background: orange;
+    width: 150px;
+    height: 200px;
+}
+/*.fixed {
+    position: fixed;
+}*/
