@@ -9,27 +9,7 @@
   <link rel="stylesheet" href="bootstrap-3.3.5/docs/assets/css/docs.min.css">
 </head>
 
-<body style="padding: 3em 3em 10em 3em;">
-
-<!-- 
-<code>
-  Inline code snippet
-</code> 
-
-<div class="zero-clipboard">
-  <span class="btn-clipboard btn-clipboard-hover">
-    Copy code
-  </span>
-</div>
-
-<div class="highlight">
-  <pre>
-    <code class="language-html" data-lang="html">
-      Code snippet
-    </code>
-  </pre>
-</div>
--->
+<body>
 
 <div class="container bs-docs-container">
   <div class="row">
@@ -38,59 +18,51 @@
 
         <!-- ----------------- 
                BUTTONS 
-               ----------------- -->
-               <h2 id="buttons" class="page-header">
+              ----------------- -->
+              <h2 id="buttons" class="page-header">
                 <a class="anchorjs-link " href="#button" aria-label="Anchor link for: buttons"></a>
                 Buttons
               </h2>
+              <h4>Colors</h4>
+              <p>
+              Change button type within <code>button-type="..."</code><br>
 
-              <p class="bs-component">
-                <a href="" class="btn btn-default">Default</a>
-                <a href="" class="btn btn-primary">Primary</a>
-                <a href="" class="btn btn-success">Success</a>
-                <a href="" class="btn btn-warning">Warning</a>
-                <a href="" class="btn btn-danger">Danger</a>
-                <a href="" class="btn btn-link">Link</a>
+              <ul>
+              <li><code>default</code> white</li>
+              <li><code>primary</code> blue</li>
+              <li><code>success</code> green</li>
+              <li><code>warning</code> orange</li>
+              <li><code>danger</code> red</li>
+              </ul>
               </p>
 
+              <h4>Sizes</h4>
+              <p>
+              Change the size within <code>button-size="..."</code><br>
+              <ul>
+                <li><code>xs</code> extra-small</li>
+                <li><code>sm</code> small</li>
+                <li><code>lg</code> large</li>
+              </ul>
+              </p>
 
-              <!-- ----------------- BUTTONS - BUTTON TOOLBAR -->
+              <h4>Add an icon</h4>
+              <p>
+              Add <code>icon='wikiglyph-star'</code>. See the last example. 
+              </p>
 
-              <h3 id="button-toolbar" class="page-header">
-                <a class="anchorjs-link " href="#button-toolbar" aria-label="Anchor link for: button toolbar"></a>
-                Button toolbar
+              <iframe width="100%" height="300" src="//jsfiddle.net/violetto/zofrzhmc/embedded/result,html/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+
+
+              <!-- ----------------- BUTTONS - Button group -->
+
+              <h3 id="button-group" class="page-header">
+                <a class="anchorjs-link " href="#button-group" aria-label="Anchor link for: button group"></a>
+                Button group
               </h3>
 
-              <!-- basic toolbar -->
-              <p class="bs-component">
-                <div class="btn-toolbar">
-                  <div class="btn-group">
-                    <a href="" class="btn btn-default">1</a>
-                    <a href="" class="btn btn-default">2</a>
-                    <a href="" class="btn btn-default">3</a>
-                    <a href="" class="btn btn-default">4</a>
-                  </div>
-                </div>
-              </p>
+              <iframe width="100%" height="300" src="//jsfiddle.net/violetto/bs6LsajL/embedded/result,html/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
-              <!-- with a dropdown -->
-              <p class="bs-component">   
-                <div class="btn-group">
-                  <a href="" class="btn btn-default">Button</a> <!-- button -->
-
-                  <div class="btn-group"> <!-- dropdown -->
-                    <a href="" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-                      Dropdown
-                      <span class="caret"></span>
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a href="">Dropdown link</a></li>
-                      <li><a href="">Dropdown link</a></li>
-                      <li><a href="">Dropdown link</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </p>
 
               <!-- ----------------- BUTTONS - Sizes -->
 
@@ -99,65 +71,47 @@
                 Button sizes
               </h3>
 
-              <!-- button sizes -->
-              <p class="bs-component">
-                <a href="" class="btn btn-primary">Default button</a>
-                <a href="" class="btn btn-primary btn-sm">Small button</a>
-                <a href="" class="btn btn-primary btn-xs">Mini button</a>
+              <h4>Sizes</h4>
+              <p>
+                The default size is regular. See example on how to change button sizes below. 
+
+                <code>btn-lg</code> large
+                <code>btn-sm</code> small
+                <code>btn-xs</code> extra-small
               </p>
 
-              <!-- justified buttons -->
-              <div class="bs-component" style="margin-bottom: 15px;">
-                <div class="btn-group btn-group-justified">
-                  <a href="" class="btn btn-default">Left</a>
-                  <a href="" class="btn btn-default">Middle</a>
-                  <a href="" class="btn btn-default">Right</a>
-                </div>
-              </div>
+              <iframe width="100%" height="250" src="//jsfiddle.net/violetto/s3ybdsfa/embedded/result,html/" allowfullscreen="allowfullscreen" frameborder="0"></iframe><br><br>
 
-              <!-- full-width buttons -->
-              <p class="bs-component">
-                <a href="" class="btn btn-default btn-lg btn-block">Block level button</a>
+
+              <h4>Full-width buttons</h4>
+              <p>
+                Add <code>btn-block</code> See example below.
               </p>
+
+              <iframe width="100%" height="300" src="//jsfiddle.net/violetto/p1ce3qsw/embedded/result,html/" allowfullscreen="allowfullscreen" frameborder="0"></iframe><br><br>
+
+
+              <h4>Full-width button group</h4>
+              <p>
+                Add <code>btn-group-justified</code> See example below
+              </p>
+
+              <iframe width="100%" height="300" src="//jsfiddle.net/violetto/up5wakh5/embedded/result,html/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+
 
 
         <!-- ----------------- 
                DROPDOWN 
-               ----------------- -->
+              ----------------- -->
 
-               <h2 id="dropdowns" class="page-header">
+              <h2 id="dropdowns" class="page-header">
                 <a class="anchorjs-link " href="#dropdowns" aria-label="Anchor link for: dropdowns"></a>
                 Dropdown
               </h2>
 
-              <!-- basic button dropdown  --> 
-              <div class="btn-group">
-                <a href="" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-                  Basic dropdown
-                  <span class="caret"></span>
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a href="">Dropdown link</a></li>
-                  <li><a href="">Dropdown link</a></li>
-                  <li><a href="">Dropdown link</a></li>
-                </ul>
-              </div>
+              <p>Add <code>&lt;li role="separator" class="divider"&gt;&lt;/li></code> if you need a separator in your dropdown menu.</p>
 
-              <!-- basic link dropdown  --> 
-              <div class="btn-group" role="group">
-                <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                  Dropdown link
-                  <span class="caret">
-                  </span>
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a href="">Action</a></li>
-                  <li><a href="">Another action</a></li>
-                  <li><a href="">Something else here</a></li>
-                  <li role="separator" class="divider"></li>
-                  <li><a href="">Separated link</a></li>
-                </ul>
-              </div>
+              <iframe width="100%" height="300" src="//jsfiddle.net/violetto/t8f3vLxh/embedded/result,html/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 
               <!-- ----------------- DROPDOWNS + buttons -->
@@ -167,158 +121,8 @@
                 Button + Dropdown
               </h3>
 
-              <!-- default dropdown + buttons -->
-              <div class="btn-toolbar bs-component" style="margin: 0;">
-                <div class="btn-group">
-                  <a href="" class="btn btn-default">Default</a>
-                  <a href="" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="">Action</a></li>
-                    <li><a href="">Another action</a></li>
-                    <li><a href="">Something else here</a></li>
-                    <li class="divider"></li>
-                    <li><a href="">Separated link</a></li>
-                  </ul>
-                </div>
+              <iframe width="100%" height="300" src="//jsfiddle.net/violetto/thv9pam9/embedded/result,html/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
-                <!-- primary dropdown + buttons -->
-                <div class="btn-group">
-                  <a href="" class="btn btn-primary">Primary</a>
-                  <a href="" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="">Action</a></li>
-                    <li><a href="">Another action</a></li>
-                    <li><a href="">Something else here</a></li>
-                    <li class="divider"></li>
-                    <li><a href="">Separated link</a></li>
-                  </ul>
-                </div>
-
-                <!-- success dropdown + buttons -->
-                <div class="btn-group">
-                  <a href="" class="btn btn-success">Success</a>
-                  <a href="" class="btn btn-success dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="">Action</a></li>
-                    <li><a href="">Another action</a></li>
-                    <li><a href="">Something else here</a></li>
-                    <li class="divider"></li>
-                    <li><a href="">Separated link</a></li>
-                  </ul>
-                </div>
-
-                <!-- warning dropdown + buttons -->
-                <div class="btn-group">
-                  <a href="" class="btn btn-warning">Warning</a>
-                  <a href="" class="btn btn-warning dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="">Action</a></li>
-                    <li><a href="">Another action</a></li>
-                    <li><a href="">Something else here</a></li>
-                    <li class="divider"></li>
-                    <li><a href="">Separated link</a></li>
-                  </ul>
-                </div>
-              </div>
-
-              <!-- ----------------- DROPDOWNS - sizes -->
-              <h3 id="dropdown-sizes" class="page-header">
-                <a class="anchorjs-link " href="#dropdown-sizes" aria-label="Anchor link for: dropdown sizes"></a>
-                Dropdown sizes
-              </h3>
-
-              <!-- Large dropdown -->
-              <p class="bs-component">
-                <div class="btn-group">
-                  <button class="btn btn-default btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Large button <span class="caret"></span>
-                  </button>
-                  <ul class="dropdown-menu">
-                    <li><a href="">Option 1</a></li>
-                    <li><a href="">Option 2</a></li>
-                    <li><a href="">Option 3</a></li>
-                  </ul>
-                </div>
-
-                <!-- Small dropdown -->
-                <div class="btn-group">
-                  <button class="btn btn-default btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Small button <span class="caret"></span>
-                  </button>
-                  <ul class="dropdown-menu">
-                    <li><a href="">Option 1</a></li>
-                    <li><a href="">Option 2</a></li>
-                    <li><a href="">Option 3</a></li>
-                  </ul>
-                </div>
-
-                <!-- Extra small dropdown -->
-                <div class="btn-group">
-                  <button class="btn btn-default btn-xs dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Extra small button <span class="caret"></span>
-                  </button>
-                  <ul class="dropdown-menu">
-                    <li><a href="">Option 1</a></li>
-                    <li><a href="">Option 2</a></li>
-                    <li><a href="">Option 3</a></li>
-                  </ul>
-                </div>
-              </p>
-
-              <!-- justified button group with dropdown-->
-              <p class="bs-component">
-                <div class="btn-group btn-group-justified">
-                  <a href="" class="btn btn-default ">Left</a> <!-- button link -->
-
-                  <div class="btn-group" role="group"> <!-- dropdown 1 -->
-                    <a href="" class="btn btn-default dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                      Dropdown 
-                      <span class="caret">
-                      </span>
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a href="">Action</a></li>
-                      <li><a href="">Another action</a></li>
-                      <li><a href="">Something else here</a></li>
-                      <li role="separator" class="divider"></li>
-                      <li><a href="">Separated link</a></li>
-                    </ul>
-                  </div>
-
-                  <div class="btn-group" role="group"> <!-- dropdown 2 -->
-                    <a href="" class="btn btn-default dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                      Dropdown 
-                      <span class="caret">
-                      </span>
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a href="">Action</a></li>
-                      <li><a href="">Another action</a></li>
-                      <li><a href="">Something else here</a></li>
-                      <li role="separator" class="divider"></li>
-                      <li><a href="">Separated link</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </p>
-
-              <!-- full-width dropdown -->
-              <p class="bs-component">
-                <div class="btn-group" role="group">
-                  <a href="" class="btn btn-default btn-group-justified dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                    Dropdown 
-                    <span class="caret">
-                    </span>
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a href="">Action</a></li>
-                    <li><a href="">Another action</a></li>
-                    <li><a href="">Something else here</a></li>
-                    <li role="separator" class="divider"></li>
-                    <li><a href="">Separated link</a></li>
-                  </ul>
-                </div>
-              </p>
 
         <!-- -----------------
             INPUT GROUPS
@@ -329,149 +133,7 @@
               Input groups
             </h2>
 
-            <!-- icon + input field -->
-            <p class="bs-component">
-              <div class="input-group">
-                <span class="input-group-addon" id="basic-addon1">@</span>
-                <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
-              </div>
-            </p>
-
-            <!-- input field + text -->
-            <p class="bs-component">
-              <div class="input-group">
-                <input type="text" class="form-control" placeholder="Recipient's username" aria-describedby="basic-addon2">
-                <span class="input-group-addon" id="basic-addon2">@example.com</span>
-              </div>
-            </p>
-
-            <!-- text + input field -->
-            <p class="bs-component">
-              <div class="input-group">
-                <span class="input-group-addon" id="basic-addon3">https://wikipedia.org/wiki/</span>
-                <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
-              </div>
-            </p>
-
-            <!-- icon + input field + text -->
-            <p class="bs-component">
-              <div class="input-group">
-                <span class="input-group-addon">$</span>
-                <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
-                <span class="input-group-addon">.00</span>
-              </div>
-            </p>
-
-            <!-- input field + button -->
-            <p class="bs-component">
-              <div class="input-group">
-                <input type="text" class="form-control" placeholder="Search for...">
-                <span class="input-group-btn">
-                  <button class="btn btn-default" type="button">Go!</button>
-                </span>
-              </div>
-            </p>
-
-            <!-- icon button + icon button + input field -->
-            <p class="bs-component">
-              <div class="input-group">
-                <div class="input-group-btn">
-                  <button type="button" class="btn btn-default" aria-label="Bold"><span class="glyphicon glyphicon-bold"></span></button>
-                  <button type="button" class="btn btn-default" aria-label="Italic"><span class="glyphicon glyphicon-italic"></span></button>
-                </div>
-                <input type="text" class="form-control" aria-label="Text input with multiple buttons">
-              </div>
-            </p>
-
-            <!-- input field + icon button + button -->
-            <p class="bs-component">
-              <div class="input-group">
-                <input type="text" class="form-control" aria-label="Text input with multiple buttons">
-                <div class="input-group-btn">
-                  <button type="button" class="btn btn-default" aria-label="Help"><span class="glyphicon glyphicon-question-sign"></span></button>
-                  <button type="button" class="btn btn-default">Action</button>
-                </div>
-              </div>
-            </p>
-
-            <!-- dropdown + input field -->
-            <p class="bs-component">
-              <div class="input-group">
-                <div class="input-group-btn">
-                  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Action <span class="caret"></span></button>
-                  <ul class="dropdown-menu">
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
-                    <li role="separator" class="divider"></li>
-                    <li><a href="#">Separated link</a></li>
-                  </ul>
-                </div><!-- /btn-group -->
-                <input type="text" class="form-control" aria-label="...">
-              </div><!-- /input-group -->
-            </p>
-
-            <!-- input field + dropdown -->
-            <p class="bs-component">
-              <div class="input-group">
-                <input type="text" class="form-control" aria-label="...">
-                <div class="input-group-btn">
-                  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Action 
-                    <span class="caret"></span>
-                  </button>
-                  <ul class="dropdown-menu dropdown-menu-right">
-                    <li><a href="">Action</a></li>
-                    <li><a href="">Another action</a></li>
-                    <li><a href="">Something else here</a></li>
-                    <li role="separator" class="divider"></li>
-                    <li><a href="">Separated link</a></li>
-                  </ul>
-                </div>
-              </div>
-            </p>
-
-            <!-- button + dropdown + input field -->
-            <p class="bs-component">
-              <div class="input-group">
-                <div class="input-group-btn">
-                  <button type="button" class="btn btn-default">Action</button>
-                  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <span class="caret"></span>
-                    <span class="sr-only">Toggle Dropdown</span>
-                  </button>
-                  <ul class="dropdown-menu">
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
-                    <li role="separator" class="divider"></li>
-                    <li><a href="#">Separated link</a></li>
-                  </ul>
-                </div>
-                <input type="text" class="form-control" aria-label="Text input with segmented button dropdown">
-              </div>
-            </p>
-
-            <!-- input field + button + dropdown -->
-            <p class="bs-component">
-              <div class="input-group">
-                <input type="text" class="form-control" aria-label="Text input with segmented button dropdown">
-                <div class="input-group-btn">
-                  <button type="button" class="btn btn-default">Action</button>
-                  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <span class="caret"></span>
-                    <span class="sr-only">Toggle Dropdown</span>
-                  </button>
-                  <ul class="dropdown-menu dropdown-menu-right">
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
-                    <li role="separator" class="divider"></li>
-                    <li><a href="#">Separated link</a></li>
-                  </ul>
-                </div>
-              </div>
-            </p>
+            <iframe width="100%" height="600" src="//jsfiddle.net/violetto/nnvh8mk9/embedded/result,html/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 
             <!-- ----------------- INPUT - sizes -->
@@ -481,21 +143,11 @@
               Input sizes
             </h3>
 
-            <!-- large input -->
-            <p class="bs-component">
-              <div class="input-group input-group-lg">
-                <span class="input-group-addon" id="sizing-addon1">@</span>
-                <input type="text" class="form-control" placeholder="Username" aria-describedby="sizing-addon1">
-              </div>
+            <p>
+              The default size is regular. See example on how to change input sizes. Add <code>btn-group-sm</code> (small) <code>btn-group-lg</code> (large)
             </p>
 
-            <!-- small input -->
-            <p class="bs-component">
-              <div class="input-group input-group-sm">
-                <span class="input-group-addon" id="sizing-addon3">@</span>
-                <input type="text" class="form-control" placeholder="Username" aria-describedby="sizing-addon3">
-              </div>
-            </p>
+            <iframe width="100%" height="600" src="//jsfiddle.net/violetto/0uasmLhz/embedded/result,html/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 
             <!-- ----------------- NAVIGATION -->
@@ -512,33 +164,7 @@
               Tabs
             </h3>
 
-            <!-- basic -->
-            <p class="bs-component">
-              <ul class="nav nav-tabs">
-                <li role="presentation" class="active"><a href="">Home</a></li>
-                <li role="presentation"><a href="">Profile</a></li>
-                <li role="presentation"><a href="">Messages</a></li>
-              </ul>
-            </p>
-
-            <!-- basic with dropdown -->
-            <p class="bs-component">
-              <ul class="nav nav-tabs">
-                <li role="presentation" class="active"><a href="">Home</a></li> <!-- button -->
-                <li role="presentation"><a href="">Profile</a></li> <!-- button -->
-                <li role="presentation"><a href="">Messages</a></li> <!-- button -->
-                <li role="presentation" class="dropdown"> <!-- dropdown -->
-                  <a class="dropdown-toggle" data-toggle="dropdown" href="" role="button" aria-haspopup="true" aria-expanded="false">
-                    Dropdown <span class="caret"></span>
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a href="">Option 1</a></li>
-                    <li><a href="">Option 2</a></li>
-                    <li><a href="">Option 3</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </p>
+            <iframe width="100%" height="250" src="//jsfiddle.net/violetto/1cb4ktbe/embedded/result,html/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
             <!-- ----------------- NAVIGATION - pills -->
 
@@ -546,26 +172,8 @@
               <a class="anchorjs-link " href="#pills" aria-label="Anchor link for: pills"></a>
               Pills
             </h3>
-            <p class="bs-component">
-              <ul class="nav nav-pills">
-                <li role="presentation" class="active"><a href="">Home</a></li> <!-- button -->
-                <li role="presentation"><a href="">Profile</a></li> <!-- button -->
-                <li role="presentation"><a href="">Messages</a></li> <!-- button -->
-                <li role="presentation" class="disabled"><a href="#">Disabled link</a></li> <!-- disabled button -->
-                <li role="presentation" class="dropdown"> <!-- dropdown -->
-                  <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                    Dropdown <span class="caret"></span>
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a href="">Action</a></li>
-                    <li><a href="">Another action</a></li>
-                    <li><a href="">Something else here</a></li>
-                    <li role="separator" class="divider"></li>
-                    <li><a href="">Separated link</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </p>
+
+            <iframe width="100%" height="250" src="//jsfiddle.net/violetto/p8jv4Ldc/embedded/result,html/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
             <!-- ----------------- NAVIGATION - sizes -->
 
@@ -574,61 +182,25 @@
               Sizes
             </h3>
 
-            <!-- justified tabs with dropdown -->
-            <p class="bs-component">
-              <ul class="nav nav-tabs nav-justified">
-                <li role="presentation" class="active"><a href="">Home</a></li>
-                <li role="presentation"><a href="">Profile</a></li>
-                <li role="presentation"><a href="">Messages</a></li>
-                <li role="presentation" class="dropdown">
-                  <a class="dropdown-toggle" data-toggle="dropdown" href="" role="button" aria-haspopup="true" aria-expanded="false">
-                    Dropdown <span class="caret"></span>
-                  </a>
-                  <ul class="dropdown-menu">
-
-                    <li><a href="">Option 1</a></li>
-                    <li><a href="">Option 2</a></li>
-                    <li><a href="">Option 3</a></li>
-
-                  </ul>
-                </li>
-              </ul>
+            <p>
+                Add <code>nav-justified</code> See example below.
             </p>
 
-            <!-- justified pills with dropdown -->
-            <p class="bs-component">
-              <ul class="nav nav-pills nav-justified">
-                <li role="presentation" class="active"><a href="">Home</a></li>
-                <li role="presentation"><a href="">Profile</a></li>
-                <li role="presentation"><a href="">Messages</a></li>
-                <li role="presentation" class="disabled"><a href="#">Disabled link</a></li>
-                <li role="presentation" class="dropdown">
-                  <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                    Dropdown <span class="caret"></span>
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a href="">Action</a></li>
-                    <li><a href="">Another action</a></li>
-                    <li><a href="">Something else here</a></li>
-                    <li role="separator" class="divider"></li>
-                    <li><a href="">Separated link</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </p>
+            <iframe width="100%" height="250" src="//jsfiddle.net/violetto/7d3y5arb/embedded/result,html/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+
 
 
         <!-- -----------------
             NAVIGATION BAR
             ----------------- -->
 
-            <h2 id="navigation-bar" class="page-header">
+            <!-- <h2 id="navigation-bar" class="page-header">
               <a class="anchorjs-link " href="#navigation-bar" aria-label="Anchor link for: navigation bar"></a>
               Navigation bar
-            </h2>
+            </h2> -->
 
             <!-- navigation bar - [left] brand + buttons + dropdown + input field [right] link + dropdown -->
-            <p class="bs-component">
+            <!-- <p class="bs-component">
               <nav class="navbar navbar-default">
                 <div class="navbar-header">
                   <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -677,10 +249,10 @@
                   </ul>
                 </div>
               </nav>
-            </p>
+            </p> -->
 
             <!-- navigation bar - buttons + text -->
-            <p class="bs-component">
+            <!-- <p class="bs-component">
               <nav class="navbar navbar-default">
                 <div class="navbar-header">
                   <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -704,9 +276,9 @@
           </nav>
         </p>
 
-
+ -->
         <!-- navigation bar - [left] buttons [right] text -->
-        <p class="bs-component">
+        <!-- <p class="bs-component">
           <nav class="navbar navbar-default">
             <div class="navbar-header">
               <a class="navbar-brand" href="">Brand</a>
@@ -725,7 +297,7 @@
               </p>
             </div>
           </nav>
-        </p>
+        </p> -->
 
         <!-- NAVIGATION BAR - HOW TO FIX NAVBAR -->
 
@@ -744,13 +316,7 @@
           Breadcrumb
         </h2>
 
-        <p class="bs-component">
-          <ol class="breadcrumb">
-            <li><a href="">Home</a></li>
-            <li><a href="">Library</a></li>
-            <li class="active">Data</li>
-          </ol>
-        </p>
+        <iframe width="100%" height="250" src="//jsfiddle.net/violetto/dq39vkjp/embedded/result,html/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 
     <!-- ----------------- 
@@ -762,25 +328,8 @@
             Pagination
           </h2>
 
-          <p class="bs-component">
-            <nav>
-              <ul class="pagination">
-                <li>
-                  <li class="disabled"><a href="" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
-                </li>
-                <li class="active"><a href="">1 <span class="sr-only">(current)</span></a></li>
-                <li><a href="">2</a></li>
-                <li><a href="">3</a></li>
-                <li><a href="">4</a></li>
-                <li><a href="">5</a></li>
-                <li>
-                  <a href="" aria-label="Next">
-                    <span aria-hidden="true">&raquo;</span>
-                  </a>
-                </li>
-              </ul>
-            </nav>    
-          </p>
+          <iframe width="100%" height="250" src="//jsfiddle.net/violetto/2v6hvwLa/embedded/result,html/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+
 
 
           <!-- ----------------- PAGINATION - sizes -->
@@ -790,50 +339,15 @@
             Pagination sizes
           </h3>
 
-          <!-- large pagination -->
-          <p class="bs-component">
-            <nav>
-              <ul class="pagination pagination-lg">
-                <li>
-                  <li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
-                </li>
-                <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
-
-                <li><a href="">2</a></li>
-                <li><a href="">3</a></li>
-                <li><a href="">4</a></li>
-                <li><a href="">5</a></li>
-                <li>
-                  <a href="#" aria-label="Next">
-                    <span aria-hidden="true">&raquo;</span>
-                  </a>
-                </li>
-              </ul>
-            </nav>    
+          <p>
+            The default size is regular. See example on how to change pagination sizes below. 
+          <ul>
+            <li><code>pagination-sm</code> small</li>
+            <li><code>pagination-lg</code> large</li>
+          </ul>
           </p>
 
-          <!-- small pagination -->
-          <p class="bs-component">
-            <nav>
-              <ul class="pagination pagination-sm">
-                <li>
-                  <li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a>
-                  </li>
-                </li>
-                <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a>
-                </li>
-                <li><a href="">2</a></li>
-                <li><a href="">3</a></li>
-                <li><a href="">4</a></li>
-                <li><a href="">5</a></li>
-                <li>
-                  <a href="" aria-label="Next">
-                    <span aria-hidden="true">&raquo;</span>
-                  </a>
-                </li>
-              </ul>
-            </nav>    
-          </p>
+          <iframe width="100%" height="250" src="//jsfiddle.net/violetto/v2zz276r/embedded/result,html/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 
     <!-- ----------------- 
@@ -845,21 +359,7 @@
               Pager
             </h3>
 
-            <!-- basic pagers -->
-            <nav>
-              <ul class="pager">
-                <li><a href="">Previous</a></li>
-                <li><a href="">Next</a></li>
-              </ul>
-            </nav>
-
-            <!-- edge pagers -->
-            <nav>
-              <ul class="pager">
-                <li class="previous disabled"><a href=""><span aria-hidden="true">&larr;</span> Older</a></li> <!-- disabled -->
-                <li class="next"><a href="">Newer <span aria-hidden="true">&rarr;</span></a></li> 
-              </ul>
-            </nav>
+            <iframe width="100%" height="250" src="//jsfiddle.net/violetto/1dtme8np/embedded/result,html/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 
     <!-- -----------------
@@ -871,12 +371,7 @@
             Labels
           </h2>
 
-          <span class="label label-default">Default</span>
-          <span class="label label-primary">Primary</span>
-          <span class="label label-success">Success</span>
-          <span class="label label-info">Info</span>
-          <span class="label label-warning">Warning</span>
-          <span class="label label-danger">Danger</span>
+          <iframe width="100%" height="250" src="//jsfiddle.net/violetto/rLhd37nw/embedded/result,html/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 
     <!-- -----------------
@@ -888,32 +383,24 @@
               Badges
             </h2>
 
-            <!-- badges on pills -->
-            <p class="bs-component">
-              <ul class="nav nav-pills" role="tablist">
-                <li role="presentation" class="active"><a href="#">Home <span class="badge">42</span></a></li>
-                <li role="presentation"><a href="#">Profile</a></li>
-                <li role="presentation"><a href="#">Messages <span class="badge">3</span></a></li>
-              </ul>
+            <p>
+              Add <code>&lt;span class="badge"&gt;...&lt;/span&gt;</code> See example below. 
             </p>
 
-            <!-- badges on links -->
-            <p class="bs-component">
-              <a href="">Inbox <span class="badge">42</span></a>
-            </p>
+            <iframe width="100%" height="250" src="//jsfiddle.net/violetto/dx0zoa38/embedded/result,html/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 
     <!-- -----------------
             LIST GROUP
             ----------------- -->
 
-            <h2 id="list-group" class="page-header">
+            <!-- <h2 id="list-group" class="page-header">
               <a class="anchorjs-link " href="#list-group" aria-label="Anchor link for: list group"></a>
               List group
-            </h2>
+            </h2> -->
 
             <!-- basic list -->
-            <p class="bs-component">
+            <!-- <p class="bs-component">
               <ul class="list-group">
                 <li class="list-group-item">Cras justo odio</li>
                 <li class="list-group-item">Dapibus ac facilisis in</li>
@@ -921,10 +408,10 @@
                 <li class="list-group-item">Porta ac consectetur ac</li>
                 <li class="list-group-item">Vestibulum at eros</li>
               </ul>
-            </p>
+            </p> -->
 
             <!-- list with badge -->
-            <p class="bs-component">
+            <!-- <p class="bs-component">
               <ul class="list-group">
                 <li class="list-group-item">
                   <span class="badge">14</span>
@@ -939,10 +426,10 @@
                   Vestibulum at eros
                 </li>
               </ul>
-            </p>
+            </p> -->
 
             <!-- linked list -->
-            <p class="bs-component">
+            <!-- <p class="bs-component">
               <div class="list-group">
                 <a href="#" class="list-group-item active">
                   Cras justo odio
@@ -952,10 +439,10 @@
                 <a href="#" class="list-group-item">Porta ac consectetur ac</a>
                 <a href="#" class="list-group-item">Vestibulum at eros</a>
               </div>
-            </p>
+            </p> -->
 
             <!-- button list -->
-            <p class="bs-component">
+            <!-- <p class="bs-component">
               <div class="list-group">
                 <button type="button" class="list-group-item">Cras justo odio</button>
                 <button type="button" class="list-group-item">Dapibus ac facilisis in</button>
@@ -963,12 +450,12 @@
                 <button type="button" class="list-group-item">Porta ac consectetur ac</button>
                 <button type="button" class="list-group-item">Vestibulum at eros</button>
               </div>
-            </p>
+            </p> -->
 
 
             <!-- ----------------- LIST GROUP - colored -->
 
-            <h2 id="list-colored" class="page-header">
+            <!-- <h2 id="list-colored" class="page-header">
               <a class="anchorjs-link " href="#list-colored" aria-label="Anchor link for: colored list"></a>
               Colored list
             </h2>
@@ -986,11 +473,11 @@
                 <a href="#" class="list-group-item list-group-item-warning">Porta ac consectetur ac</a>
                 <a href="#" class="list-group-item list-group-item-danger">Vestibulum at eros</a>
               </div>
-            </p>
+            </p> -->
 
             <!-- ----------------- LIST GROUP - custom -->
 
-            <h2 id="list-custom" class="page-header">
+            <!-- <h2 id="list-custom" class="page-header">
               <a class="anchorjs-link " href="#list-custom" aria-label="Anchor link for: custom list"></a>
               Custom list
             </h2>
@@ -1018,7 +505,165 @@
                   </p>
                 </a>
               </div>
-            </p>
+            </p> -->
+
+
+        <!-- ----------------- 
+                   LISTS 
+              ----------------- -->
+              <h2 id="lists" class="page-header">
+                <a class="anchorjs-link " href="#lists" aria-label="Anchor link for: lists"></a>
+                Lists
+              </h2>
+
+              <h4>List content</h4>
+
+              <ul>
+                <li><strong>Title</strong><br>
+                  <code>&lt;wiki-list-title&gt;<br>...<br>&lt;/wiki-list-title&gt;</code>
+                </li>
+
+                <li><strong>Sub-title</strong><br>
+                  <code>&lt;wiki-list-sub-title&gt;<br>...<br>&lt;/wiki-list-sub-title&gt;</code>
+                </li>
+
+                <li><strong>Content</strong><br>
+                  <code>&lt;wiki-list-content&gt;<br>...<br>&lt;/wiki-list-content&gt;</code><br>
+                </li>
+              </ul>
+
+              <h4>Image</h4>
+                <p>
+                  Add <code>img-src="..."</code> to <code>&lt;wiki-list-item img-src="..."&gt;</code>
+                </p>
+
+              <iframe width="100%" height="800" src="//jsfiddle.net/violetto/rdwq18Lx/embedded/result,html/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+
+
+
+
+        <!-- ----------------- 
+                   PANELS 
+              ----------------- -->
+              <h2 id="panels" class="page-header">
+                <a class="anchorjs-link " href="#panels" aria-label="Anchor link for: panels"></a>
+                Panels
+              </h2>
+              <h4>Panel title</h4>
+              <p>
+                Add title within <code>&lt;wiki-info-panel title="..."&gt;</code><br>
+              </p>
+
+              <h4>Panel content</h4>
+
+              <ul>
+                <li><strong>Title</strong><br>
+                <code>&lt;wiki-info-panel-content title="..."&gt;</code>
+                </li>
+
+                <li><strong>Content</strong><br>
+                <code>&lt;wiki-info-panel-content&gt;<br>...<br>&lt;/wiki-info-panel-content&gt;</code><br>
+                </li>
+              </ul>
+
+              <h4>Image</h4>
+              <ul>
+                <li>
+                  <strong>Panel lead image</strong><br>
+                  Add <code>img-src="..."</code> to <code>&lt;wiki-info-panel title="Mahatma Ghandi" img-src="..."&gt;</code>
+                </li>
+
+                <li>
+                  <strong>Content image</strong><br>
+                  Add <code>img-src="..."</code> to <code>&lt;wiki-info-panel-content title="Signature" img-src="..."&gt;</code>
+                </li>
+              </ul><br>
+
+              <iframe width="100%" height="1000" src="//jsfiddle.net/violetto/9gxu8wxo/embedded/result,html/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+
+
+
+
+
+        <!-- ----------------- 
+                   CARDS 
+              ----------------- -->
+              <h2 id="cards" class="page-header">
+                <a class="anchorjs-link " href="#cards" aria-label="Anchor link for: cards"></a>
+                Cards
+              </h2>
+
+              <h4>Card content</h4>
+
+              <ul>
+                <li><strong>Title</strong><br>
+                  <code>&lt;wiki-card-title&gt;<br>...<br>&lt;/wiki-card-title&gt;</code>
+                </li>
+
+                <li><strong>Content</strong><br>
+                  <code>&lt;wiki-card-content&gt;<br>...<br>&lt;/wiki-card-content&gt;</code><br>
+                </li>
+              </ul>
+
+              <h4>Tags / Label</h4>
+              <p>
+                Add <code>&lt;a href="#"...&lt;/a&gt;</code> before <code>&lt;/wiki-card&gt;</code>
+              </p>
+
+              <h4>Image</h4>
+              <p>
+                Add <code>img-src="..."</code> to <code>&lt;wiki-card img-src="..."&gt;</code> 
+              </p>
+
+              <h4>Card orientation</h4>
+              <p>
+                Change <code>orientation="..."</code> within <code>&lt;wiki-card&gt;</code>
+                <ul>
+                  <li>
+                    Portrait
+                  </li>
+                  <li>
+                    Landscape
+                  </li>
+                </ul>
+              </p>
+
+              <iframe width="100%" height="800" src="//jsfiddle.net/violetto/29hckjy2/embedded/result,html/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+
+
+
+
+
+              <h3 id="card-2" class="page-header">
+                <a class="anchorjs-link " href="#card-2" aria-label="Anchor link for: card-2"></a>
+                Card 2
+              </h3>
+
+              <h4>Card 2 content</h4>
+
+              <ul>
+                <li><strong>Title</strong><br>
+                  <code>title='...'</code> to <code>&lt;wiki-stat&gt;</code>
+                </li>
+
+                <li><strong>Sub-title</strong><br>
+                  <code>sub-title='...'</code> to <code>&lt;wiki-stat&gt;</code>
+                </li>
+
+                <li><strong>Card content</strong><br>
+                  <code>&lt;wiki-stat-content&gt;<br>...<br>&lt;/wiki-stat-content&gt;</code><br>
+                </li>
+              </ul>
+
+              <h4>Tags / Label</h4>
+              <p>
+                Add <code>&lt;a href="#"...&lt;/a&gt;</code> before <code>&lt;/wiki-stat&gt;</code>
+              </p>
+
+              <iframe width="100%" height="300" src="//jsfiddle.net/violetto/0uq05x89/embedded/result,html/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+
+
+
 
           </div>
         </div>
@@ -1028,12 +673,12 @@
             -------------------------- -->
 
             <div class="col-md-3" role="complementary">
-              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" style="margin-top: 3em;">
                 <ul class="nav bs-docs-sidenav">
                   <li>
                     <a href="#buttons">Buttons</a>
                     <ul class="nav">
-                      <li><a href="#button-toolbar">Button toolbar</a></li>
+                      <li><a href="#button-toolbar">Button group</a></li>
                       <li><a href="#button-sizes">Button sizes</a></li>
                     </ul>
                   </li>
@@ -1041,7 +686,6 @@
                     <a href="#dropdowns">Dropdowns</a>
                     <ul class="nav">
                       <li><a href="#button-dropdowns">Button + Dropdown</a></li>
-                      <li><a href="#dropdown-sizes">Dropdown sizes</a></li>
                     </ul>
                   </li>
                   <li>
@@ -1058,14 +702,14 @@
                       <li><a href="#nav-sizes">Sizes</a></li>
                     </ul>
                   </li>
-                  <li>
+<!--                   <li>
                     <a href="#navigation-bar">Navigation bar</a>
                     <ul class="nav">
                       <li><a href="#basic-navbar">Basic navigation bar</a></li>
                       <li><a href="#fix-navbar">Fix navigation bar</a></li>
                     </ul>
                   </li>
-                  <li>
+ -->                  <li>
                     <a href="#breadcrumb">Breadcrumb</a>
                   </li>
                   <li>
@@ -1083,14 +727,29 @@
                   <li>
                     <a href="#badges">Badges</a>
                   </li>
-                  <li>
+                  <!-- <li>
                     <a href="#list-group">List group</a>
                     <ul class="nav">
                       <li><a href="#list-colored">Colored list</a></li>
                       <li><a href="#list-custom">Custom list</a></li>
                     </ul>
-
+                  </li> -->
+                  <li>
+                    <a href="#panels">Panels</a>
+                    <ul class="nav">
+                      <li><a href="#panel-sizes">Panel-sizes</a></li>
+                    </ul>
                   </li>
+                  <li>
+                    <a href="#lists">Lists</a>
+                  </li>
+                  <li>
+                    <a href="#cards">Cards</a>
+                    <ul class="nav">
+                      <li><a href="#card-2">Card 2</a></li>
+                    </ul>
+                  </li>
+
 
                 </ul>
               </nav>

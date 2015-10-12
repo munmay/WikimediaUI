@@ -7319,6 +7319,7 @@ select.form-control {
   padding: .4em 0 .5em 0;
   border-bottom: 1px solid #cccccc;
   line-height: 1.25em;
+  vertical-align: middle;
 }
 .list-simple-group .media {
   margin: 0 0 1px 0;
