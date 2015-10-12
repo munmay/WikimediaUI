@@ -36,11 +36,11 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 .btn-xs {
 	padding: .1em .4em;
 }
-a.btn.btn-default, 
+/*a.btn.btn-default, 
 a.btn.btn-primary.btn-lg, 
 a.list-group-item {
 	padding-bottom: .5em;
-}
+}*/
 a.btn.btn-default:active {
 	border: @border-reg;
 }
@@ -140,9 +140,6 @@ a.btn.btn-default:active {
 
 /* ---- BUTTONS IN DROPDOWN MENU ---- */
 
-.btn-primary + .dropdown-menu * {
-	background-color: @brand-primary;
-}
 .btn-group.open .dropdown-toggle{
 	box-shadow: none;
 }
@@ -385,31 +382,30 @@ a.list-group-item:active{
 .navbar-inverse > div > div > ul > .open > ul > .divider {
     background-color: @gray5;
 }
-.navbar-inverse div > div > ul > .open > ul > li > a:hover{ 
+.navbar-inverse > div > div > ul > .open > ul > li > a:hover{ 
 	background-color: @inverseColorHover;
 }
-.navbar-inverse div > div > ul > .open > ul > li > a:active{ 
-	background-color: @inverseColorActive;
+.navbar-inverse > div > div > ul > .open > ul > li > a:active{ 
+	background-color: @inverseColorActive !important;
 }
-.navbar-inverse div > div > ul > .open > ul > li > a:focus{
+.navbar-inverse > div > div > ul > .open > ul > li > a:focus{
 	background-color: @inverseColorFocus;
 }
-.navbar-inverse div > div > ul > .open > ul > li > a{
+.navbar-inverse > div > div > ul > .open > ul > li > a{
 	color: @navbar-inverse-color;
 	background-color: @primary-gray-shade1;
 }
  
-button.btn.btn-default.dropdown-toggle:hover, 
+/*button.btn.btn-default.dropdown-toggle:hover, 
 button.btn.btn-default.dropdown-toggle:hover:focus {
 	background-color: @inverseGray1ColorHover;
 	box-shadow: none;
-}
+}*/
 .navbar-inverse .navbar-nav > li > a:hover {
 	background-color: @inverseColorHover;
 }
 .navbar-inverse .navbar-nav > li > a:active, 
 button.btn.btn-default.dropdown-toggle:active,
-.dropdown-menu > li > a:active,
 a.list-group-item:active,
 .navbar-inverse .navbar-nav > li > a:active:focus {
 	background-color: @inverseColorActive;
