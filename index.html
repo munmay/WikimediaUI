@@ -7,18 +7,32 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <link rel="stylesheet" href="MW/mediawiki.min.css">
   <link rel="stylesheet" href="bootstrap-3.3.5-dist/css/docs.min.css">
+</head>
 
 <style type="text/css">
   .bs-docs-section h4{
     margin-top: 1.5em;
   }
-
   iframe{
     margin-top: 1em;
   }
-</style>
+  .icon-container {
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 5em;
 
-</head>
+   -webkit-column-count: 3;
+      -moz-column-count: 3;
+           column-count: 3;
+
+   -webkit-column-gap: 20px;
+      -moz-column-gap: 20px;
+           column-gap: 20px;
+}
+.icon-container .icon{
+    margin-right: 1em;
+}
+</style>
 
 <body>
 
@@ -682,7 +696,7 @@
                     Example:<br> <code>&lt;svg class="icon wikiglyph-unstar"&gt;&lt;use xlink:href="#wikiglyph-unstar"&gt;&lt;/use>&lt;/svg&gt;</code> generates a <svg class="icon wikiglyph-unstar"><use xlink:href="#wikiglyph-unstar"></use></svg>
                   </p>
 
-                  <div class="input-group"> 
+                  <div class="input-group page-header"> 
                     <input type="text" class="form-control" placeholder="Search icons">
                     <span class="input-group-btn">
                       <button class="btn btn-default" type="button">
@@ -690,12 +704,7 @@
                       </button>
                     </span>
                   </div>
-                  
 
-                  <h4 id="icons-general" class="page-header">
-                    <a class="anchorjs-link" href="#icons-general" aria-label="Anchor link for: general icons"></a>
-                    General icons
-                  </h4>
 
                   <div class="icon-container">
                     <ul class="nav nav-pills nav-stacked">
