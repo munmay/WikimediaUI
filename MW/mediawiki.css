@@ -7683,3 +7683,7 @@ tfoot {
 .icon-container .icon {
   margin-right: 1em;
 }
+code {
+  background-color: #e8f3fb;
+  color: #165c91;
+}
