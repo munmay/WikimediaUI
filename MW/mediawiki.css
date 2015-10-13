@@ -7669,3 +7669,17 @@ tfoot {
 /*.fixed {
     position: fixed;
 }*/
+.icon-container {
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 5em;
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  column-count: 3;
+  -webkit-column-gap: 20px;
+  -moz-column-gap: 20px;
+  column-gap: 20px;
+}
+.icon-container .icon {
+  margin-right: 1em;
+}
