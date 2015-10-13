@@ -6773,6 +6773,10 @@ a:focus {
 h1 {
   font-family: Georgia, "Times New Roman", Times, serif;
 }
+h2.page-header {
+  border-bottom: 1px solid #cccccc;
+  padding-bottom: .1em;
+}
 a.list-group-item:hover,
 a.list-group-item:focus {
   border-bottom: 1px solid #cccccc;
