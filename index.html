@@ -35,12 +35,27 @@
   body{
     margin-bottom: 3em;
   }
+  li a svg{
+    color: #165C91;
+    vertical-align: top;
+    width: 1.5em;
+    height: 1.5em;
+  }
+  li a svg.icon{
+    vertical-align: top;
+    width: 1.5em;
+    height: 1.5em;
+  }
 </style>
 
 <body>
 
   <div class="container bs-docs-container">
     <div class="row">
+      <div class="col-md-12">
+        <h1 class="page-header" style="margin-bottom: 0;">Mediawiki UI</h1>
+      </div>
+
       <div class="col-md-9" role="main">
         <div class="bs-docs-section">
 
@@ -55,18 +70,18 @@
 
 
 
-                  <p>
-                    Example:<br> <code>&lt;svg class="icon wikiglyph-unstar"&gt;&lt;use xlink:href="#wikiglyph-unstar"&gt;&lt;/use>&lt;/svg&gt;</code> generates a <svg class="icon wikiglyph-unstar"><use xlink:href="#wikiglyph-unstar"></use></svg>
+                  <p class="page-header">
+                  Example:<br> <code>&lt;svg class="icon wikiglyph-unstar"&gt;&lt;use xlink:href="#wikiglyph-unstar"&gt;&lt;/use>&lt;/svg&gt;</code> generates a <svg class="icon wikiglyph-unstar" style="color: #165C91"><use xlink:href="#wikiglyph-unstar"></use></svg>
                   </p>
 
-                  <div class="input-group page-header"> 
+                  <!-- <div class="input-group page-header"> 
                     <input type="text" class="form-control" placeholder="Search icons (coming soon)">
                     <span class="input-group-btn">
                       <button class="btn btn-default" type="button">
                         Filter
                       </button>
                     </span>
-                  </div>
+                  </div> -->
 
 
                   <div class="icon-container">
