@@ -6981,7 +6981,7 @@ button.btn.btn-default.dropdown-toggle:hover:focus {
 ------------------- */
 .dropdown-menu {
   border: 1px solid #cccccc;
-  box-shadow: 0 2px 0px rgba(204, 204, 204, 0.5);
+  box-shadow: 0 3px 0px 0 rgba(0, 0, 0, 0.1), 0 1px 3px 0px rgba(0, 0, 0, 0.3);
   left: 0px;
   padding: 0px;
 }
@@ -7080,7 +7080,7 @@ ul.nav-pills > li.dropdown > a.dropdown-toggle {
 }
 .navbar-default {
   background-color: #f9f9f9;
-  box-shadow: 0 2px 0px rgba(204, 204, 204, 0.5);
+  box-shadow: 0 3px 0px 0 rgba(0, 0, 0, 0.1), 0 1px 3px 0px rgba(0, 0, 0, 0.3);
 }
 .navbar-default .navbar-nav > li > a {
   border-left: 1px solid #cccccc;
@@ -7356,7 +7356,8 @@ ul.nav-tabs > li > a {
 }
 /* ---- PANEL ---- */
 .panel {
-  box-shadow: 0 2px 0px rgba(204, 204, 204, 0.5);
+  box-shadow: 0 3px 0px 0 rgba(0, 0, 0, 0.1), 0 1px 3px 0px rgba(0, 0, 0, 0.3);
+  border: none;
 }
 .panel-heading {
   padding: 1em;
@@ -7364,7 +7365,7 @@ ul.nav-tabs > li > a {
 }
 .panel-body {
   padding: 1em 1.5em 1em 1.5em;
-  box-shadow: 0 2px 0px rgba(204, 204, 204, 0.5);
+  box-shadow: 0 3px 0px 0 rgba(0, 0, 0, 0.1), 0 1px 3px 0px rgba(0, 0, 0, 0.3);
 }
 .panel-primary > .panel-body {
   box-shadow: 0 2px 0 #165c91;
