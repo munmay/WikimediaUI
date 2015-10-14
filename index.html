@@ -5,8 +5,8 @@
   <title>Mediawiki UI</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <link rel="stylesheet" href="MW/mediawiki.min.css">
-  <link rel="stylesheet" href="bootstrap-3.3.5-dist/css/docs.min.css">
+  <link rel="stylesheet" href="https://wikimedia-ui.wmflabs.org/MW/mediawiki.min.css">
+  <link rel="stylesheet" href="https://wikimedia-ui.wmflabs.org/bootstrap-3.3.5-dist/css/docs.min.css">
 </head>
 
 <style type="text/css">
@@ -71,9 +71,9 @@
 
 
                   <p class="page-header">
-                  <a href="https://jsfiddle.net/violetto/uscehhLu">Example:</a><br> <code>&lt;svg class="icon wikiglyph-unstar"&gt;&lt;use xlink:href="#wikiglyph-unstar"&gt;&lt;/use>&lt;/svg&gt;</code> generates a <svg class="icon wikiglyph-unstar" style="color: #165C91"><use xlink:href="#wikiglyph-unstar"></use></svg>
+                  Example:
+                  <code>&lt;wiki-icon icon="<span class='icon-example-component'>unstar</span>"&gt;&lt;/wiki-icon&gt;</code> generates <span class='icon-example'><svg class="icon wikiglyph-unstar" style="color: #165C91"><use xlink:href="#wikiglyph-unstar"></use></svg></span>
                   </p>
-
                   <!-- <div class="input-group page-header"> 
                     <input type="text" class="form-control" placeholder="Search icons (coming soon)">
                     <span class="input-group-btn">
@@ -1290,15 +1290,23 @@
   <script src="https://fontastic.s3.amazonaws.com/Sr6GbqfKhL8VvZWw23WzLN/icons.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
-  <script src="bootstrap-3.3.5-dist/js/docs.min.js"></script>
+  <script src="https://wikimedia-ui.wmflabs.org/bootstrap-3.3.5-dist/js/docs.min.js"></script>
   <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-  <script src="bootstrap-3.3.5-dist/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="https://wikimedia-ui.wmflabs.org/bootstrap-3.3.5-dist/js/ie10-viewport-bug-workaround.js"></script>
 
   <script>
     $('body').scrollspy({
       target: '.bs-docs-sidebar',
       offset: 40
     });
+    $('.icon-container a').click(function(){
+
+        var icon = $(this).find('svg').attr('class').split(' ')[1];
+        $(".icon-example-code").html(icon)
+        $(".icon-example").html('<svg class="icon '+icon+'" style="color: #165C91"><use xlink:href="#'+icon+'"></use></svg>');
+        $(".icon-example-component").html(icon.replace('wikiglyph-',''));
+        return false;
+    })
   </script>
 </body>
 </html>
