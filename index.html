@@ -11,9 +11,9 @@
 </head>
 
 <style type="text/css">
-  .bs-docs-section h4{
+/*  .bs-docs-section h4{
     margin-top: 1.5em;
-  }
+  }*/
   iframe{
     margin-top: 1em;
   }
@@ -541,7 +541,7 @@
                   <li><code>warning</code> orange</li>
                   <li><code>danger</code> red</li>
                 </ul>
-              </p>
+              </p><br>
 
               <h4>Sizes</h4>
               <p>
@@ -551,7 +551,7 @@
                   <li><code>sm</code> small</li>
                   <li><code>lg</code> large</li>
                 </ul>
-              </p>
+              </p><br>
 
               <h4>Add an icon</h4>
               <p>
@@ -742,6 +742,105 @@
                     Lists
                   </h2>
 
+                  <div class='row'>
+
+                  <!-- DEMO START -->
+
+    
+        <!-- EXAMPLE: List with more information and image -->
+    <div class='col-sm-12 col-md-6'> 
+        <wiki-list>
+            
+            <!-- First list item -->
+            <wiki-list-item href="#" img-src="https://upload.wikimedia.org/wikipedia/commons/1/1a/Ada_Lovelace_portrait_circa_1840.jpg">
+                <wiki-list-sub-title>
+                    OCT 2015
+                </wiki-list-sub-title>
+                <wiki-list-title> 
+                    Title 1
+                </wiki-list-title>
+                <wiki-list-content>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce auctor felis vitae elit rutrum, eget mollis risus laoreet. 
+                </wiki-list-content>
+            </wiki-list-item>
+
+            
+            <!-- Second list item -->
+            <wiki-list-item href="#" img-src="https://upload.wikimedia.org/wikipedia/commons/1/1a/Ada_Lovelace_portrait_circa_1840.jpg">
+                <wiki-list-sub-title>
+                    NOV 2015
+                </wiki-list-sub-title>
+                <wiki-list-title> 
+                    Title 2
+                </wiki-list-title>
+                <wiki-list-content>
+                    Cras augue sem, lacinia sit amet sem eu, vehicula fringilla mi. Aenean tincidunt cursus lacinia. Mauris consectetur lectus id erat lacinia, at volutpat purus congue.
+                </wiki-list-content>
+            </wiki-list-item>
+            
+            
+            <!-- Third list item -->
+            <wiki-list-item href="#" img-src="https://upload.wikimedia.org/wikipedia/commons/1/1a/Ada_Lovelace_portrait_circa_1840.jpg">
+                <wiki-list-sub-title>
+                    DEC 2015
+                </wiki-list-sub-title>
+                <wiki-list-title> 
+                    Title 3
+                </wiki-list-title>
+                <wiki-list-content>
+                    Nullam nec egestas massa. Vivamus egestas dictum efficitur. Mauris eu nisi auctor, facilisis magna nec, maximus ipsum. In rutrum auctor venenatis.
+                </wiki-list-content>
+            </wiki-list-item>
+
+        </wiki-list>
+    </div>
+
+
+
+    <!-- EXAMPLE: Basic list with image -->
+    <div class='col-xs-12 col-md-6'> 
+        <wiki-list>
+            
+            <!-- First list item -->
+            <wiki-list-item img-src="https://upload.wikimedia.org/wikipedia/commons/1/1a/Ada_Lovelace_portrait_circa_1840.jpg">
+                <wiki-list-content>
+                    Image label
+                </wiki-list-content>
+            </wiki-list-item>
+
+            
+            <!-- Second list item -->
+            <wiki-list-item img-src="https://upload.wikimedia.org/wikipedia/commons/1/1a/Ada_Lovelace_portrait_circa_1840.jpg">
+                <wiki-list-content>
+                    Image label 2
+                </wiki-list-content>
+            </wiki-list-item>
+            
+            
+            <!-- Third list item -->
+            <wiki-list-item img-src="https://upload.wikimedia.org/wikipedia/commons/1/1a/Ada_Lovelace_portrait_circa_1840.jpg">
+                <wiki-list-content>
+                    Image label 3
+                </wiki-list-content>
+            </wiki-list-item>
+            
+            
+            <!-- Fourth list item -->
+            <wiki-list-item img-src="https://upload.wikimedia.org/wikipedia/commons/1/1a/Ada_Lovelace_portrait_circa_1840.jpg">
+                <wiki-list-content>
+                    Image label 4
+                </wiki-list-content>
+            </wiki-list-item>
+
+        </wiki-list>
+    </div>
+    </div>
+    <br>
+
+
+<!-- DEMO END -->
+
+
                   <h4>List content</h4>
 
                   <ul>
@@ -756,14 +855,14 @@
                     <li><strong>Content</strong><br>
                       <code>&lt;wiki-list-content&gt;<br>...<br>&lt;/wiki-list-content&gt;</code><br>
                     </li>
-                  </ul>
+                  </ul><br>
 
                   <h4>Image</h4>
                   <p>
                     Add <code>img-src="..."</code> to <code>&lt;wiki-list-item img-src="..."&gt;</code>
                   </p>
 
-                  <iframe width="100%" height="800" src="//jsfiddle.net/violetto/rdwq18Lx/embedded/result,html/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+                  <iframe width="100%" height="500" src="//jsfiddle.net/violetto/rdwq18Lx/embedded/result,html/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
                   <h3 id="lists-basic" class="page-header">
                     <a class="anchorjs-link " href="#lists-basic" aria-label="Anchor link for: lists basic"></a>
@@ -785,7 +884,7 @@
                   <h4>Panel title</h4>
                   <p>
                     Add title within <code>&lt;wiki-info-panel title="..."&gt;</code><br>
-                  </p>
+                  </p><br>
 
                   <h4>Panel content</h4>
 
@@ -797,7 +896,7 @@
                     <li><strong>Content</strong><br>
                       <code>&lt;wiki-info-panel-content&gt;<br>...<br>&lt;/wiki-info-panel-content&gt;</code><br>
                     </li>
-                  </ul>
+                  </ul><br>
 
                   <h4>Image</h4>
                   <ul>
@@ -826,74 +925,223 @@
                     Cards
                   </h2>
 
-                  <h4>Card content</h4>
 
-                  <ul>
-                    <li><strong>Title</strong><br>
-                      <code>&lt;wiki-card-title&gt;<br>...<br>&lt;/wiki-card-title&gt;</code>
-                    </li>
+                  <!-- DEMO START -->
+                  <div class="row">
 
-                    <li><strong>Content</strong><br>
-                      <code>&lt;wiki-card-content&gt;<br>...<br>&lt;/wiki-card-content&gt;</code><br>
-                    </li>
-                  </ul>
-
-                  <h4>Tags / Label</h4>
-                  <p>
-                    Add <code>&lt;a href="#"...&lt;/a&gt;</code> before <code>&lt;/wiki-card&gt;</code>
-                  </p>
-
-                  <h4>Image</h4>
-                  <p>
-                    Add <code>img-src="..."</code> to <code>&lt;wiki-card img-src="..."&gt;</code> 
-                  </p>
-
-                  <h4>Card orientation</h4>
-                  <p>
-                    Change <code>orientation="..."</code> within <code>&lt;wiki-card&gt;</code>
-                    <ul>
-                      <li>
-                        Portrait
-                      </li>
-                      <li>
-                        Landscape
-                      </li>
-                    </ul>
-                  </p>
-
-                  <iframe width="100%" height="800" src="//jsfiddle.net/violetto/29hckjy2/embedded/result,html/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+                  <!-- EXAMPLE: Basic card -->
+                    <div class='col-xs-12 col-md-6 col-lg-4'> 
+                      <wiki-card orientation="portrait">
+                        <wiki-card-title>
+                          Card title
+                        </wiki-card-title>
+                        <wiki-card-content>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tempus sodales arcu, non semper tellus viverra eget. Etiam at mi purus. Vestibulum gravida purus et pharetra dictum. Nullam tincidunt nunc nec hendrerit ornare. In pharetra velit velit, quis pretium nisl laoreet vitae.
+                        </wiki-card-content>
+                        <wiki-card-label>
+                          Card category
+                        </wiki-card-label> 
+                    </wiki-card>
+                  </div>
 
 
 
 
+                <!-- EXAMPLE: Landscape card with image -->
+                  <div class='col-xs-12 col-md-8 col-lg-8'> 
 
-                  <h2 id="card-2" class="page-header">
-                    <a class="anchorjs-link " href="#card-2" aria-label="Anchor link for: card-2"></a>
-                    Card 2
-                  </h2>
+                    <wiki-card orientation="landscape" img-src="http://bit.ly/1L72vb0">
 
-                  <h4>Card 2 content</h4>
+                      <wiki-card-title>
+                        Ada Lovelace
+                      </wiki-card-title>
+                      <wiki-card-label icon='wikiglyph-public-domain'>
+                        Public domain - Author unknown via Wikimedia Commons
+                      </wiki-card-label>
+                      <wiki-card-content>
+                        Painting based on Carpenter portrait (circa 1840).
+                      </wiki-card-content>
 
-                  <ul>
-                    <li><strong>Title</strong><br>
-                      Add <code>title='...'</code> to <code>&lt;wiki-stat&gt;</code>
-                    </li>
+                      <a href="#">Women in computing</a>
+                      <a href="#">History</a>
 
-                    <li><strong>Sub-title</strong><br>
-                      Add <code>sub-title='...'</code> to <code>&lt;wiki-stat&gt;</code>
-                    </li>
+                      </wiki-card>
+                    </div>
 
-                    <li><strong>Card content</strong><br>
-                      <code>&lt;wiki-stat-content&gt;<br>...<br>&lt;/wiki-stat-content&gt;</code><br>
-                    </li>
-                  </ul>
 
-                  <h4>Tags / Label</h4>
-                  <p>
-                    Add <code>&lt;a href="#"...&lt;/a&gt;</code> before <code>&lt;/wiki-stat&gt;</code>
-                  </p>
 
-                  <iframe width="100%" height="300" src="//jsfiddle.net/violetto/0uq05x89/embedded/result,html/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+                  <!-- EXAMPLE: Portrait card with image -->
+
+                    <div class='col-xs-12 col-md-6 col-lg-4'> 
+
+                      <wiki-card orientation="portrait" img-src="http://bit.ly/1L72vb0">
+                      <wiki-card-content>
+                        Painting based on Carpenter portrait (circa 1840).
+                      </wiki-card-content>
+                    </wiki-card>
+                    </div>
+
+                    <div class='col-xs-12 col-md-6 col-lg-4'> 
+
+                      <wiki-card orientation="portrait" img-src="http://bit.ly/1L72vb0">
+
+                      <wiki-card-title>
+                        Ada Lovelace
+                      </wiki-card-title>
+                      <wiki-card-label icon='wikiglyph-public-domain'>
+                        Public domain - Author unknown via Wikimedia Commons
+                      </wiki-card-label>
+                      <wiki-card-content>
+                        Painting based on Carpenter portrait (circa 1840).
+                      </wiki-card-content>
+
+                      <a href="#">Women in computing</a>
+                      <a href="#">History</a>
+
+                    </wiki-card>
+                  </div>
+
+                  <div class='col-xs-12 col-md-6 col-lg-4'> 
+
+                    <wiki-card orientation="portrait" img-src="http://bit.ly/1L72vb0">
+                    <wiki-card-title>
+                      Ada Lovelace
+                    </wiki-card-title>
+                    <wiki-card-content>
+                      Painting based on Carpenter portrait (circa 1840).
+                    </wiki-card-content>
+                  </wiki-card>
+                  </div>
+
+            </div>
+            <!-- DEMO END -->
+
+
+
+
+            <h4>Card content</h4>
+
+            <ul>
+              <li><strong>Title</strong><br>
+                <code>&lt;wiki-card-title&gt;<br>...<br>&lt;/wiki-card-title&gt;</code>
+              </li>
+
+              <li><strong>Content</strong><br>
+                <code>&lt;wiki-card-content&gt;<br>...<br>&lt;/wiki-card-content&gt;</code><br>
+              </li>
+            </ul><br>
+
+            <h4>Tags / Label</h4>
+            <p>
+              Add <code>&lt;a href="#"...&lt;/a&gt;</code> before <code>&lt;/wiki-card&gt;</code>
+            </p><br>
+
+            <h4>Image</h4>
+            <p>
+              Add <code>img-src="..."</code> to <code>&lt;wiki-card img-src="..."&gt;</code> 
+            </p><br>
+
+            <h4>Card orientation</h4>
+            <p>
+              Change <code>orientation="..."</code> within <code>&lt;wiki-card&gt;</code>
+              <ul>
+                <li>
+                  Portrait
+                </li>
+                <li>
+                  Landscape
+                </li>
+              </ul>
+            </p>
+
+            <iframe width="100%" height="500" src="//jsfiddle.net/violetto/29hckjy2/embedded/result,html/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+
+
+
+
+
+            <h2 id="card-2" class="page-header">
+              <a class="anchorjs-link " href="#card-2" aria-label="Anchor link for: card-2"></a>
+              Card 2
+            </h2>
+
+
+            <!-- DEMO START -->
+
+            <div class='row'>
+    
+    <!-- EXAMPLE: Basic panel -->
+    <div class='col-sm-12 col-md-6'> 
+        <wiki-info-panel title="Mahatma Gandhi">
+
+            <wiki-info-panel-content title="Known for">
+                Leadership of Indian independence movement, philosophy of Satyagraha, Ahimsa or nonviolence, pacifism
+            </wiki-info-panel-content>
+
+            <wiki-info-panel-content title="Alma mater">
+                Alfred High School, Rajkot, Samaldas College, Bhavnagar, University College, London (UCL)
+            </wiki-info-panel-content>
+
+            <wiki-info-panel-content title="Movement">
+                Indian National Congress
+            </wiki-info-panel-content>
+
+        </wiki-info-panel>   
+    </div>
+    
+
+    
+    
+    <!-- EXAMPLE: Panel with lead image + content with image -->
+    
+    <div class='col-sm-12 col-md-6'> 
+        <wiki-info-panel title="Mahatma Gandhi" img-src="https://upload.wikimedia.org/wikipedia/commons/d/d1/Portrait_Gandhi.jpg">
+
+            <wiki-info-panel-content title="Other names">
+                Mahatma Gandhi, Bapu, Gandhiji
+            </wiki-info-panel-content>
+
+            <wiki-info-panel-content title="Ethnicity">
+                Gujarati
+            </wiki-info-panel-content>
+
+            <wiki-info-panel-content title="Resting place">
+                Cremated at Rajghat, Delhi 28.6415°N 77.2483°E
+            </wiki-info-panel-content>
+
+            <wiki-info-panel-content title="Signature">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/Mohandas_K._Gandhi_signature.svg" class="img-responsive">
+            </wiki-info-panel-content>
+        </wiki-info-panel>
+            
+    </div>
+</div>
+
+
+<!-- DEMO END -->
+
+
+<h4>Card 2 content</h4>
+            <ul>
+              <li><strong>Title</strong><br>
+                Add <code>title='...'</code> to <code>&lt;wiki-stat&gt;</code>
+              </li>
+
+              <li><strong>Sub-title</strong><br>
+                Add <code>sub-title='...'</code> to <code>&lt;wiki-stat&gt;</code>
+              </li>
+
+              <li><strong>Card content</strong><br>
+                <code>&lt;wiki-stat-content&gt;<br>...<br>&lt;/wiki-stat-content&gt;</code><br>
+              </li>
+            </ul><br>
+
+            <h4>Tags / Label</h4>
+            <p>
+              Add <code>&lt;a href="#"...&lt;/a&gt;</code> before <code>&lt;/wiki-stat&gt;</code>
+            </p>
+
+            <iframe width="100%" height="300" src="//jsfiddle.net/violetto/0uq05x89/embedded/html,result/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 
     <!-- ----------------- 
