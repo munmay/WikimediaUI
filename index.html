@@ -881,6 +881,99 @@
                     <a class="anchorjs-link " href="#panels" aria-label="Anchor link for: panels"></a>
                     Panels
                   </h2>
+
+                  <!-- DEMO START -->
+                  <div class="row">
+
+                  <!-- EXAMPLE: Basic card -->
+                    <div class='col-xs-12 col-md-6 col-lg-4'> 
+                      <wiki-card orientation="portrait">
+                        <wiki-card-title>
+                          Card title
+                        </wiki-card-title>
+                        <wiki-card-content>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tempus sodales arcu, non semper tellus viverra eget. Etiam at mi purus. Vestibulum gravida purus et pharetra dictum. Nullam tincidunt nunc nec hendrerit ornare. In pharetra velit velit, quis pretium nisl laoreet vitae.
+                        </wiki-card-content>
+                        <wiki-card-label>
+                          Card category
+                        </wiki-card-label> 
+                    </wiki-card>
+                  </div>
+
+
+
+
+                <!-- EXAMPLE: Landscape card with image -->
+                  <div class='col-xs-12 col-md-8 col-lg-8'> 
+
+                    <wiki-card orientation="landscape" img-src="http://bit.ly/1L72vb0">
+
+                      <wiki-card-title>
+                        Ada Lovelace
+                      </wiki-card-title>
+                      <wiki-card-label icon='wikiglyph-public-domain'>
+                        Public domain - Author unknown via Wikimedia Commons
+                      </wiki-card-label>
+                      <wiki-card-content>
+                        Painting based on Carpenter portrait (circa 1840).
+                      </wiki-card-content>
+
+                      <a href="#">Women in computing</a>
+                      <a href="#">History</a>
+
+                      </wiki-card>
+                    </div>
+
+
+
+                  <!-- EXAMPLE: Portrait card with image -->
+
+                    <div class='col-xs-12 col-md-6 col-lg-4'> 
+
+                      <wiki-card orientation="portrait" img-src="http://bit.ly/1L72vb0">
+                      <wiki-card-content>
+                        Painting based on Carpenter portrait (circa 1840).
+                      </wiki-card-content>
+                    </wiki-card>
+                    </div>
+
+                    <div class='col-xs-12 col-md-6 col-lg-4'> 
+
+                      <wiki-card orientation="portrait" img-src="http://bit.ly/1L72vb0">
+
+                      <wiki-card-title>
+                        Ada Lovelace
+                      </wiki-card-title>
+                      <wiki-card-label icon='wikiglyph-public-domain'>
+                        Public domain - Author unknown via Wikimedia Commons
+                      </wiki-card-label>
+                      <wiki-card-content>
+                        Painting based on Carpenter portrait (circa 1840).
+                      </wiki-card-content>
+
+                      <a href="#">Women in computing</a>
+                      <a href="#">History</a>
+
+                    </wiki-card>
+                  </div>
+
+                  <div class='col-xs-12 col-md-6 col-lg-4'> 
+
+                    <wiki-card orientation="portrait" img-src="http://bit.ly/1L72vb0">
+                    <wiki-card-title>
+                      Ada Lovelace
+                    </wiki-card-title>
+                    <wiki-card-content>
+                      Painting based on Carpenter portrait (circa 1840).
+                    </wiki-card-content>
+                  </wiki-card>
+                  </div>
+
+            </div>
+            <!-- DEMO END -->
+
+
+
                   <h4>Panel title</h4>
                   <p>
                     Add title within <code>&lt;wiki-info-panel title="..."&gt;</code><br>
@@ -1029,17 +1122,17 @@
               <li><strong>Content</strong><br>
                 <code>&lt;wiki-card-content&gt;<br>...<br>&lt;/wiki-card-content&gt;</code><br>
               </li>
-            </ul><br>
+            </ul>
 
             <h4>Tags / Label</h4>
             <p>
               Add <code>&lt;a href="#"...&lt;/a&gt;</code> before <code>&lt;/wiki-card&gt;</code>
-            </p><br>
+            </p>
 
             <h4>Image</h4>
             <p>
               Add <code>img-src="..."</code> to <code>&lt;wiki-card img-src="..."&gt;</code> 
-            </p><br>
+            </p>
 
             <h4>Card orientation</h4>
             <p>
@@ -1054,7 +1147,7 @@
               </ul>
             </p>
 
-            <iframe width="100%" height="500" src="//jsfiddle.net/violetto/29hckjy2/embedded/result,html/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+            <iframe width="100%" height="500" src="//jsfiddle.net/violetto/29hckjy2/embedded/html,result/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 
 
