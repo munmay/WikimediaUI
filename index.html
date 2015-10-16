@@ -882,95 +882,59 @@
                     Panels
                   </h2>
 
-                  <!-- DEMO START -->
-                  <div class="row">
+            <!-- DEMO START -->
 
-                  <!-- EXAMPLE: Basic card -->
-                    <div class='col-xs-12 col-md-6 col-lg-4'> 
-                      <wiki-card orientation="portrait">
-                        <wiki-card-title>
-                          Card title
-                        </wiki-card-title>
-                        <wiki-card-content>
-                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tempus sodales arcu, non semper tellus viverra eget. Etiam at mi purus. Vestibulum gravida purus et pharetra dictum. Nullam tincidunt nunc nec hendrerit ornare. In pharetra velit velit, quis pretium nisl laoreet vitae.
-                        </wiki-card-content>
-                        <wiki-card-label>
-                          Card category
-                        </wiki-card-label> 
-                    </wiki-card>
-                  </div>
+            <div class='row'>
+    
+    <!-- EXAMPLE: Basic panel -->
+    <div class='col-sm-12 col-md-6'> 
+        <wiki-info-panel title="Mahatma Gandhi">
+
+            <wiki-info-panel-content title="Known for">
+                Leadership of Indian independence movement, philosophy of Satyagraha, Ahimsa or nonviolence, pacifism
+            </wiki-info-panel-content>
+
+            <wiki-info-panel-content title="Alma mater">
+                Alfred High School, Rajkot, Samaldas College, Bhavnagar, University College, London (UCL)
+            </wiki-info-panel-content>
+
+            <wiki-info-panel-content title="Movement">
+                Indian National Congress
+            </wiki-info-panel-content>
+
+        </wiki-info-panel>   
+    </div>
+    
+
+    
+    
+    <!-- EXAMPLE: Panel with lead image + content with image -->
+    
+    <div class='col-sm-12 col-md-6'> 
+        <wiki-info-panel title="Mahatma Gandhi" img-src="https://upload.wikimedia.org/wikipedia/commons/d/d1/Portrait_Gandhi.jpg">
+
+            <wiki-info-panel-content title="Other names">
+                Mahatma Gandhi, Bapu, Gandhiji
+            </wiki-info-panel-content>
+
+            <wiki-info-panel-content title="Ethnicity">
+                Gujarati
+            </wiki-info-panel-content>
+
+            <wiki-info-panel-content title="Resting place">
+                Cremated at Rajghat, Delhi 28.6415°N 77.2483°E
+            </wiki-info-panel-content>
+
+            <wiki-info-panel-content title="Signature">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/Mohandas_K._Gandhi_signature.svg" class="img-responsive">
+            </wiki-info-panel-content>
+        </wiki-info-panel>
+            
+    </div>
+</div>
 
 
-
-
-                <!-- EXAMPLE: Landscape card with image -->
-                  <div class='col-xs-12 col-md-8 col-lg-8'> 
-
-                    <wiki-card orientation="landscape" img-src="http://bit.ly/1L72vb0">
-
-                      <wiki-card-title>
-                        Ada Lovelace
-                      </wiki-card-title>
-                      <wiki-card-label icon='wikiglyph-public-domain'>
-                        Public domain - Author unknown via Wikimedia Commons
-                      </wiki-card-label>
-                      <wiki-card-content>
-                        Painting based on Carpenter portrait (circa 1840).
-                      </wiki-card-content>
-
-                      <a href="#">Women in computing</a>
-                      <a href="#">History</a>
-
-                      </wiki-card>
-                    </div>
-
-
-
-                  <!-- EXAMPLE: Portrait card with image -->
-
-                    <div class='col-xs-12 col-md-6 col-lg-4'> 
-
-                      <wiki-card orientation="portrait" img-src="http://bit.ly/1L72vb0">
-                      <wiki-card-content>
-                        Painting based on Carpenter portrait (circa 1840).
-                      </wiki-card-content>
-                    </wiki-card>
-                    </div>
-
-                    <div class='col-xs-12 col-md-6 col-lg-4'> 
-
-                      <wiki-card orientation="portrait" img-src="http://bit.ly/1L72vb0">
-
-                      <wiki-card-title>
-                        Ada Lovelace
-                      </wiki-card-title>
-                      <wiki-card-label icon='wikiglyph-public-domain'>
-                        Public domain - Author unknown via Wikimedia Commons
-                      </wiki-card-label>
-                      <wiki-card-content>
-                        Painting based on Carpenter portrait (circa 1840).
-                      </wiki-card-content>
-
-                      <a href="#">Women in computing</a>
-                      <a href="#">History</a>
-
-                    </wiki-card>
-                  </div>
-
-                  <div class='col-xs-12 col-md-6 col-lg-4'> 
-
-                    <wiki-card orientation="portrait" img-src="http://bit.ly/1L72vb0">
-                    <wiki-card-title>
-                      Ada Lovelace
-                    </wiki-card-title>
-                    <wiki-card-content>
-                      Painting based on Carpenter portrait (circa 1840).
-                    </wiki-card-content>
-                  </wiki-card>
-                  </div>
-
-            </div>
-            <!-- DEMO END -->
+<!-- DEMO END -->
 
 
 
@@ -1004,7 +968,7 @@
                     </li>
                   </ul><br>
 
-                  <iframe width="100%" height="1100" src="//jsfiddle.net/violetto/9gxu8wxo/embedded/result,html/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+                  <iframe width="100%" height="400" src="//jsfiddle.net/violetto/9gxu8wxo/embedded/html,result/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 
 
@@ -1127,7 +1091,7 @@
             <h4>Tags / Label</h4>
             <p>
               Add <code>&lt;a href="#"...&lt;/a&gt;</code> before <code>&lt;/wiki-card&gt;</code>
-            </p>
+            </p>  
 
             <h4>Image</h4>
             <p>
@@ -1159,62 +1123,47 @@
             </h2>
 
 
-            <!-- DEMO START -->
+<h4>Card 2 content</h4>
 
-            <div class='row'>
+
+<!-- DEMO START -->
+
+<div class='row'>
     
-    <!-- EXAMPLE: Basic panel -->
-    <div class='col-sm-12 col-md-6'> 
-        <wiki-info-panel title="Mahatma Gandhi">
+    <!-- EXAMPLE: Basic card -->
+    <div class='col-sm-12 col-md-6 col-md-3'> 
+        
+        <wiki-stat title='Card title' sub-title="Card subtitle">
+            <wiki-stat-content>
+                100%
+            </wiki-stat-content>
+        </wiki-stat>
 
-            <wiki-info-panel-content title="Known for">
-                Leadership of Indian independence movement, philosophy of Satyagraha, Ahimsa or nonviolence, pacifism
-            </wiki-info-panel-content>
-
-            <wiki-info-panel-content title="Alma mater">
-                Alfred High School, Rajkot, Samaldas College, Bhavnagar, University College, London (UCL)
-            </wiki-info-panel-content>
-
-            <wiki-info-panel-content title="Movement">
-                Indian National Congress
-            </wiki-info-panel-content>
-
-        </wiki-info-panel>   
     </div>
     
-
     
     
-    <!-- EXAMPLE: Panel with lead image + content with image -->
     
-    <div class='col-sm-12 col-md-6'> 
-        <wiki-info-panel title="Mahatma Gandhi" img-src="https://upload.wikimedia.org/wikipedia/commons/d/d1/Portrait_Gandhi.jpg">
-
-            <wiki-info-panel-content title="Other names">
-                Mahatma Gandhi, Bapu, Gandhiji
-            </wiki-info-panel-content>
-
-            <wiki-info-panel-content title="Ethnicity">
-                Gujarati
-            </wiki-info-panel-content>
-
-            <wiki-info-panel-content title="Resting place">
-                Cremated at Rajghat, Delhi 28.6415°N 77.2483°E
-            </wiki-info-panel-content>
-
-            <wiki-info-panel-content title="Signature">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/Mohandas_K._Gandhi_signature.svg" class="img-responsive">
-            </wiki-info-panel-content>
-        </wiki-info-panel>
+    
+    <!-- EXAMPLE: Basic card with tags/labels -->
+    <div class='col-sm-12 col-md-6 col-md-3'> 
+        
+        <wiki-stat title='"San Francisco" article views' sub-title="JAN 2015">
+            <wiki-stat-content>
+                45,000
+            </wiki-stat-content>
             
+            <a href="#">San Francisco</a>
+            <a href="#">Article view</a>
+        </wiki-stat>
+        
     </div>
 </div>
 
+<!-- DEMO END-->
 
-<!-- DEMO END -->
 
 
-<h4>Card 2 content</h4>
             <ul>
               <li><strong>Title</strong><br>
                 Add <code>title='...'</code> to <code>&lt;wiki-stat&gt;</code>
