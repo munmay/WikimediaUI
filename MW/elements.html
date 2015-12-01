@@ -90,7 +90,7 @@ not utilize light DOM loaded styles.-->
            
             if(labelicon){
                
-                this.labelspace.innerHTML = "<svg class='icon "+labelicon+"n'><use xlink:href='#"+labelicon+"'></use></svg> "
+                this.labelspace.innerHTML = "<svg class='icon "+labelicon+"n'><use xlink:href='MW/icons.svg#"+labelicon+"'></use></svg> "
             }
            this.setLabel(label);
             }
@@ -119,7 +119,7 @@ not utilize light DOM loaded styles.-->
     var MyElementProto = Object.create(HTMLButtonElement.prototype);
     MyElementProto.__proto__ == HTMLButtonElement.prototype;
     MyElementProto.createdCallback = function() {
-        if (this.hasAttribute('icon')) {this.innerHTML = '<svg class="icon '+this.getAttribute('icon')+'"><use xlink:href="#'+this.getAttribute('icon')+'"></use></svg>'+this.innerHTML}
+        if (this.hasAttribute('icon')) {this.innerHTML = '<svg class="icon '+this.getAttribute('icon')+'"><use xlink:href="MW/icons.svg#'+this.getAttribute('icon')+'"></use></svg>'+this.innerHTML}
         this.buttonType = this.getAttribute('button-type')||'default';
         this.buttonSize = this.getAttribute('button-size');
         this.className = this.className + " btn btn-"+this.buttonType; 
