@@ -14,7 +14,7 @@ not utilize light DOM loaded styles.-->
     var MyElementProto = Object.create(HTMLElement.prototype);
     MyElementProto.__proto__ == HTMLButtonElement.prototype;
     MyElementProto.createdCallback = function() {
-       this.innerHTML = '<svg class="icon wikiglyph-'+this.getAttribute('icon')+'"><use xlink:href="#wikiglyph-'+this.getAttribute('icon')+'"></use></svg>';   
+       this.innerHTML = '<svg class="icon wikiglyph-'+this.getAttribute('icon')+'"><use xlink:href="MW/icons.svg#wikiglyph-'+this.getAttribute('icon')+'"></use></svg>';   
     };
     
     thatDoc.registerElement('wiki-icon', {prototype: MyElementProto});
@@ -149,7 +149,7 @@ not utilize light DOM loaded styles.-->
 
         <div class="card-footer">
             <svg class="icon wikiglyph-star">
-                <use xlink:href="#wikiglyph-star"></use>
+                <use xlink:href="MW/icons.svg#wikiglyph-star"></use>
             </svg>Share
         </div>
     </div>
