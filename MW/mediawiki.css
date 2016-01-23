@@ -7542,6 +7542,7 @@ ul.nav-tabs > li > a {
 }
 .card-body {
   padding: 1em;
+  border-top: 1px solid #cccccc;
 }
 .no-gutter {
   padding-right: 0;
@@ -7638,6 +7639,13 @@ tfoot {
   width: 1.2em;
   height: 1.2em;
   vertical-align: text-bottom;
+  fill: currentColor;
+}
+[class^="icon-"],
+[class*=" icon-"] {
+  height: 1.2em;
+  width: 1.2em;
+  display: inline-block;
   fill: currentColor;
 }
 .no-margin-bottom {
