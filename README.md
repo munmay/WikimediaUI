@@ -1,4 +1,4 @@
 # WikimediaUI
 Wikimedia UI built with Bootstrap
 
-http://wikimedia-ui.wmflabs.org
+http://munmay.github.io/WikimediaUI
